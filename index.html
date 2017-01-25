@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TS 360 TSSO CMS Sprite Sampler</title>
+    
+    <!-- Sprite CSS -->
+    <link href="css/sprite.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/prism.css" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">TS 360 TSSO CMS Sprite Sampler</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#logos">Logos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#loginpage">Login Screen</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nav &amp; Menus <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="page-scroll" href="#menus-sidebar">Sidebar</a></li>
+                            <li><a class="page-scroll" href="#menus-user">User Menu</a></li>
+                            <li><a class="page-scroll" href="#menus-item">Item Menus</a></li>
+                          </ul>                        
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#icons">Icons</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Title Source Standing Orders CMS Sprite Sampler</h1>
+                <hr>
+                <p>Below are examples of how to implement the new sprite. CSS for all images:* 
+                    <code class="language-css">
+.[insert-class/id-name-here] {background: url('../img/cms-sprite.png') no-repeat;}
+</code>
+                    <br /><span>*<b>Notes</b>: Any images not included in the sprite are noted in the code samples.<br />The example HTML/CSS may need adjustment in varying environments.</span>
+                </p>
+                <!-- <a href="#logos" class="btn btn-primary btn-xl page-scroll">'imgs/cms-sprite.png'</a> -->
+                <a href="img/cms-sprite.png" download class="btn btn-primary btn-xl">Download the Sprite</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="logos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Logos</h2>
+                    <hr class="primary">
+                    <div class="spriteOutput">
+                        <h3>OUTPUT:</h3>
+                        <div class="logo-retail"></div><!-- END of .logo-retail -->
+                        <div class="logo-libEdu"></div><!-- END of .logo-libEdu -->
+                        <div class="clear"></div><!-- END of .clear -->
+                        <div class="logo-retail-sm"></div><!-- END of .logo-retail-sm -->
+                        <div class="logo-libEdu-sm"></div><!-- END of .logo-libEdu-sm -->
+                    </div><!-- END of .spriteOutput -->               
+
+                    <div class="clear"></div><!-- END of .clear -->
+
+                    <div class="spriteCode">
+                        <h3>HTML:</h3>
+                        <pre>
+                            <code class="language-markup">
+&lt;!----------------      BIG LOGOS    ----------------&gt;                            
+&lt;div class="logo-retail"&gt;&lt;/div&gt;&lt;!-- END of .logo-retail --&gt;
+
+&lt;div class="logo-libEdu"&gt;&lt;/div&gt;&lt;!-- END of .logo-libEdu --&gt;
+
+&lt;!----------------      SMALL LOGOS    ----------------&gt; 
+&lt;div class="logo-retail-sm"&gt;&lt;/div&gt;&lt;!-- END of .logo-retail-sm --&gt;
+
+&lt;div class="logo-libEdu-sm"&gt;&lt;/div&gt;&lt;!-- END of .logo-libEdu-sm --&gt;
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                    <div class="spriteCode">
+                        <h3>CSS:</h3>
+                        <pre>
+                            <code class="language-css">
+/***************      BIG LOGOS    ****************/
+.logo-retail {background-position: -5px -55px; width: 236px; height: 161px;}
+.logo-libEdu {background-position: -255px -53px; width: 450px; height: 160px;}
+
+/***************      SMALL LOGOS    ****************/
+.logo-retail-sm {background-position: -6px -237px; width: 151px; height: 103px;}
+.logo-libEdu-sm {background-position: -168px -237px; width: 281px; height: 100px;}
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                </div><!-- END of .col-lg-12.text-center -->
+            </div><!-- END of .row -->
+        </div><!-- END of .container -->
+    </section><!-- END of #logos -->
+
+
+    <section id="loginpage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Login Screen</h2>
+                    <hr class="primary">
+                    <div class="spriteOutput">
+                        <h3>OUTPUT:</h3>
+                        <!----------------      LOGIN HEADER    ---------------->  
+                        <div class="login-header"></div><!-- END of .login-header -->
+
+                        <!----------------      LOGIN     ---------------->
+                        <div class="login-box">
+                            <div class="input-box">
+                                <span id="login-id"></span>
+                                <input type="text" placeholder="Login ID" />
+                            </div><!-- END of .input-box -->
+
+                            <div class="input-box">
+                                <span id="login-pw"></span>
+                                <input type="password" placeholder="Password" class="loginpassword" />
+                                <div id="pw">
+                                    <span id="hiddenPW" class=""></span>
+                                    <span id="visiblePW" class="dn"></span>
+                                </div><!-- END of #pw -->
+                            </div><!-- END of .input-box -->
+
+                            <div class="extra">
+                                <input type="checkbox" class="tertiaryChkbx" id="rembMe"> <label for="rembMe" id="rembMe-label"><span></span>Remember Me</label>
+                            </div><!-- END of .extra -->
+
+                            <button name="loginBtn" class="slate">Login</button>
+                        </div><!-- END of .login-box -->
+                        
+                        <!----------------      LOGIN FAILED    ---------------->
+                        <div class="login-box failed">
+                            <h1>Login Failed</h1>
+                            <span class="lock"></span>
+                            <p>You do not have permission to access the dashboard.<br />Please contact the administrator for assistance.</p>
+                            <a href="mailto:#">emailaddress@baker-taylor.com</a>
+                        </div><!-- END of .login-box -->
+
+                        <div class="clear"></div><!-- END of .clear -->
+                        
+                        <!----------------      LOGIN FOOTER    ---------------->
+                        <div class="login-footer">
+                            <div class="info">
+                                <ul>
+                                    <li><a href="http://www.baker-taylor.com/home_aboutus_details.cfm" target="_blank">About</a></li>
+                                    <li><a href="http://www.baker-taylor.com/privacy.cfm" target="_blank">Privacy Policy</a></li>
+                                </ul>
+                                <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>. Baker &amp; Taylor. All Rights Reserved.<br />For more information, call us toll-free at 1-800-775-1800.</p>
+                            </div><!-- END of .info -->
+                            <div class="social">
+                                <ul>
+                                    <li class="facebook"><a href="http://www.facebook.com/pages/Baker-Taylor/140688295944178" target="_blank"><span>Facebook</span></a></li>
+                                    <li class="linkedin"><a href="http://www.linkedin.com/company/12055" target="_blank"><span>Linked In</span></a></li>
+                                    <li class="twitter"><a href="http://twitter.com/BakerandTaylor" target="_blank"><span>Twitter</span></a></li>
+                                    <li class="youtube"><a href="http://www.youtube.com/user/BakerandTaylorTV?feature=mhw5" target="_blank"><span>YouTube</span></a></li>
+                                </ul>
+                            </div><!-- END of .social -->
+                        </div><!-- END of .login-footer -->
+
+                        <div class="clear"></div><!-- END of .clear -->
+
+                    </div><!-- END of .spriteOutput -->
+
+                    <div class="spriteCode">
+                        <h3>HTML:</h3>
+                        <pre>
+                            <code class="language-markup">
+&lt;!----------------      LOGIN HEADER    ----------------&gt;  
+&lt;div class="login-header"&gt;&lt;/div&gt;&lt;!-- END of .login-header --&gt;
+
+&lt;!----------------      LOGIN     ----------------&gt;
+&lt;div class="login-box"&gt;
+    &lt;div class="input-box"&gt;
+        &lt;span id="login-id"&gt;&lt;/span&gt;
+        &lt;input type="text" placeholder="Login ID" /&gt;
+    &lt;/div&gt;&lt;!-- END of .input-box --&gt;
+
+    &lt;div class="input-box"&gt;
+        &lt;span id="login-pw"&gt;&lt;/span&gt;
+        &lt;input type="password" placeholder="Password" class="loginpassword" /&gt;
+        &lt;div id="pw"&gt;
+            &lt;span id="hiddenPW" class=""&gt;&lt;/span&gt;
+            &lt;span id="visiblePW" class="dn"&gt;&lt;/span&gt;
+        &lt;/div&gt;&lt;!-- END of #pw --&gt;
+    &lt;/div&gt;&lt;!-- END of .input-box --&gt;
+
+    &lt;div class="extra"&gt;
+        &lt;input type="checkbox" class="tertiaryChkbx" id="rembMe"&gt; &lt;label for="rembMe" id="rembMe-label"&gt;&lt;span&gt;&lt;/span&gt;Remember Me&lt;/label&gt;
+    &lt;/div&gt;&lt;!-- END of .extra --&gt;
+
+    &lt;button name="loginBtn" class="slate"&gt;Login&lt;/button&gt;
+&lt;/div&gt;&lt;!-- END of .login-box --&gt;
+
+&lt;!----------------      LOGIN FAILED    ----------------&gt;
+&lt;div class="login-box failed"&gt;
+    &lt;h1&gt;Login Failed&lt;/h1&gt;
+    &lt;span class="lock"&gt;&lt;/span&gt;
+    &lt;p&gt;You do not have permission to access the dashboard.&lt;br /&gt;Please contact the administrator for assistance.&lt;/p&gt;
+    &lt;a href="mailto:#"&gt;emailaddress@baker-taylor.com&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .login-box.failed --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;!----------------      LOGIN FOOTER    ----------------&gt;
+&lt;div class="login-footer"&gt;
+    &lt;div class="info"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="http://www.baker-taylor.com/home_aboutus_details.cfm" target="_blank"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="http://www.baker-taylor.com/privacy.cfm" target="_blank"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;Copyright &copy; &lt;script type="text/javascript"&gt;document.write(new Date().getFullYear());&lt;/script&gt;. Baker &amp; Taylor. All Rights Reserved.&lt;br /&gt;For more information, call us toll-free at 1-800-775-1800.&lt;/p&gt;
+    &lt;/div&gt;&lt;!-- END of .info --&gt;
+    &lt;div class="social"&gt;
+        &lt;ul&gt;
+            &lt;li class="facebook"&gt;&lt;a href="http://www.facebook.com/pages/Baker-Taylor/140688295944178" target="_blank"&gt;&lt;span&gt;Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="linkedin"&gt;&lt;a href="http://www.linkedin.com/company/12055" target="_blank"&gt;&lt;span&gt;Linked In&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="twitter"&gt;&lt;a href="http://twitter.com/BakerandTaylor" target="_blank"&gt;&lt;span&gt;Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="youtube"&gt;&lt;a href="http://www.youtube.com/user/BakerandTaylorTV?feature=mhw5" target="_blank"&gt;&lt;span&gt;YouTube&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!-- END of .social --&gt;
+&lt;/div&gt;&lt;!-- END of .login-footer --&gt;
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                    <div class="spriteCode">
+                        <h3>CSS:</h3>
+                        <pre>
+                            <code class="language-css">
+/***************      LOGIN SCREEN  *************/
+.login-header {background-position: 0px 0px; background-repeat: repeat-x; height: 47px;}
+.login-box {width: 400px; height: 330px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; font-family: 'Muli', sans-serif !important;}
+    .login-box label {font-weight: normal;}
+    .login-box .input-box, .login-box button[name=loginBtn] {width: 315px; height: 51px; margin: 30px auto;}
+        .login-box .input-box #login-id {background-position: -716px -53px; width: 65px; height: 51px; float: left;}
+        .login-box .input-box #login-pw {background-position: -787px -53px; width: 65px; height: 51px; float: left;}
+        .login-box .input-box input {width: 250px; height: 51px; border: 1px solid #7DB2CE; padding: 10px; border-radius: 0 4px 4px 0; font-size: 16px; float: left;}
+        .login-box .input-box input.loginpassword {border-top: 1px solid #7DB2CE; border-right: 0px; border-bottom: 1px solid #7DB2CE; border-left: 1px solid #7DB2CE; padding-right: 35px;}
+        .login-box .input-box #pw {width: 35px; height: 51px; float: left; border-right: 1px solid #7DB2CE; border-radius: 0 4px 4px 0; border-top: 1px solid #7DB2CE; border-bottom: 1px solid #7DB2CE; margin-left: -35px;}
+        .login-box .input-box #pw #hiddenPW {background-position: -860px -54px; width: 23px; height: 16px; float: left; margin-top: 17px; margin-left: 5px;}
+        .login-box .input-box #pw #visiblePW {background-position: -893px -56px; width: 19px; height: 13px; float: left; margin-top: 19px; margin-left: 5px;}
+    .login-box .extra {margin-left: 42px;}
+        .login-box .extra input[type=checkbox] {display:none;}
+        .login-box .extra input[type=checkbox].tertiaryChkbx + label span {display: inline-block; background-position: -1265px -303px; width: 21px; height: 21px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
+        .login-box .extra input[type=checkbox].tertiaryChkbx:checked + label span {background-position: -1265px -327px;}
+        .login-box .extra label {cursor: pointer; color: #757575;}
+    .login-box button.slate {border: 1px solid #0B1F2E; border-radius: 4px; background-color: #405C72; color: #FFFFFF; text-transform: uppercase; font-size: 28px; margin: 30px 42px 30px 42px;}
+        .login-box button.slate:hover {opacity: 0.8;}
+        .login-box button.slate:active {background-color: #51728C;}
+
+    /************     LOGIN FAILED     *************/
+    .login-box.failed {padding: 30px 20px; text-align: center}
+        .login-box.failed .lock {background-position: -890px -74px; width: 23px; height: 29px; display: inline-block; margin: 10px;}
+        .login-box.failed h1 {color: #004A80; font-size: 30px; font-family: 'Muli', sans-serif !important;}
+        .login-box.failed p {color: #757575; line-height: 1.8; margin-bottom: 35px;  font-size:14px;}
+        .login-box.failed a, .login-box.failed a:hover, .login-box.failed a:focus {color: #004A80;}
+
+    /************     LOGIN FOOTER     *************/
+    .login-footer {background-color: #3B4354; color: #FFFFFF; float: left; width: 100%;padding: 10px;}
+        .login-footer ul {padding-left: 0px;}
+        .login-footer ul li {display: inline-block;}
+        .login-footer .info {float: left; width: 500px;}
+            .login-footer .info ul {padding-left: 0px;}
+            .login-footer .info ul li {padding-right: 10px; padding-left: 7px; border-right: 1px solid #FFFFFF;}
+            .login-footer .info ul li:first-of-type {padding-left: 0px;}
+            .login-footer .info ul li:last-of-type {border-right: none;}
+            .login-footer .info ul a, .login-footer .info ul a:active, .login-footer .info ul a:focus {color: #FFFFFF;}
+            .login-footer .info p {line-height: 1.2; font-size: 14px; margin-bottom: 0px; padding-top: 10px;}
+        .login-footer .social {float: right;}
+            .login-footer .social ul li {width: 32px; height: 32px; margin-right: 5px;}
+            .login-footer .social ul li:last-of-type {margin-right: 0px;}
+            .login-footer .social ul li a {display: block; width: 100%; height: 100%;}
+            .login-footer .social ul li a span {position: absolute; left: -9999px;}
+            .login-footer .social .facebook {background-position: -923px -55px; }
+            .login-footer .social .linkedin {background-position: -963px -55px; }
+            .login-footer .social .twitter {background-position: -1003px -55px; }
+            .login-footer .social .youtube {background-position: -1044px -55px; }
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                    <div class="spriteCode">
+                        <h3>JS:</h3>
+                        <pre>
+                            <code class="language-javascript">
+///////     LOGIN SHOW/HIDE PASSWORD     ////////
+$(document).ready(function() {
+    $('#pw').click(function() {
+        if ($('.loginpassword').attr('type')=='password') {
+            $('.loginpassword').attr('type', 'text');
+            $('#hiddenPW').addClass('dn');
+            $('#visiblePW').removeClass('dn');
+        }
+        else {
+            $('.loginpassword').attr('type', 'password');
+            $('#visiblePW').addClass('dn');
+            $('#hiddenPW').removeClass('dn');
+        }
+    });
+});
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+                </div><!-- END of .col-lg-12 text-center -->
+            </div><!-- END of .row -->
+        </div><!-- END of .container -->
+    </section><!-- END of #loginpage -->
+
+
+
+    <section class="bg-primary" id="menus-sidebar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Menus - Sidebar</h2>
+                    <hr class="primary">
+                    <div class="spriteOutput">
+                        <h3>OUTPUT:</h3>
+                        <div class="sidebar">
+                            <span class="hamburger-sideMenu"></span><!-- END of .hamburger-menu -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <ul class="side-menu">
+                                <li><div><a href="#"><span class="home-sideMenu"></span>Dashboard</a></div></li>
+                                <li><div><a><span class="lists-sideMenu"></span>Lists <span class="chevron-right-secondary"></span><span class="dn chevron-down-secondary"></span></a></div></li>
+                                <li><div><a><span class="settings-sideMenu"></span>Settings <span class="chevron-right-secondary"></span><span class="dn chevron-down-secondary"></span></a></div></li>
+                            </ul><!-- END of .side_menu -->
+                        </div><!-- END of .sidebar -->
+
+                        <div class="sidebar">
+                            <span class="hamburger-sideMenu"></span><!-- END of .hamburger-menu -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <ul class="side-menu">
+                                <li><div><a href="#"><span class="home-sideMenu"></span>Dashboard</a></div></li>
+                                <li class="active">
+                                    <div><a><span class="lists-sideMenu"></span>Lists <span class="dn chevron-right-secondary"></span><span class="chevron-down-secondary"></span></a></div>
+                                    <div>
+                                        <ul class="child-menu">
+                                            <li><a href="#">DK Eyewitness</a></li>
+                                            <li><a href="#">Top 300 Travel Series</a></li>
+                                            <li><a href="#">Spring Top 100 Antiques &amp; Collectibles</a></li>
+                                            <li><a href="#">Top 100 Occupations &amp; Careers</a></li>
+                                            <li><a href="#">Harris Infosource</a></li>
+                                        </ul><!-- END of .child_menu -->
+                                    </div>
+                                    <div>
+                                        <ul class="child-menu">
+                                            <li class="ta-r">
+                                                <span>
+                                                    <a href="#">See More <span class="chevron-seeMore-secondary"></span></a><br />
+                                                    <span>User Group:<br />
+                                                    <a href="#">Standing Orders Team</a></span>
+                                                </span>
+                                            </li>
+                                        </ul><!-- END of .child_menu -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div><a><span class="settings-sideMenu"></span>Settings <span class="chevron-right-secondary"></span><span class="dn chevron-down-secondary"></span></a></div>
+                                </li>
+                            </ul><!-- END of .side_menu -->
+                        </div><!-- END of .sidebar -->
+
+                        <div class="sidebar">
+                            <span class="hamburger-sideMenu"></span><!-- END of .hamburger-menu -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <ul class="side-menu">
+                                <li><div><a href="#"><span class="home-sideMenu"></span>Dashboard</a></div></li>
+                                <li>
+                                    <div><a><span class="lists-sideMenu"></span>Lists <span class="chevron-right-secondary"></span><span class="dn chevron-down-secondary"></span></a></div>
+                                </li>
+                                <li class="active">
+                                    <div><a><span class="settings-sideMenu"></span>Settings <span class="dn chevron-right-secondary"></span><span class="chevron-down-secondary"></span></a></div>
+                                    <div>
+                                        <ul class="child-menu">
+                                            <li><a href="#"><span class="myProfile-sideMenu"></span>My Profile</a></li>
+                                            <li><a href="#"><span class="helpSupport-sideMenu"></span>Help &amp; Support</a></li>
+                                            <li><a href="#"><span class="userPermissions-sideMenu"></span>Manage User Permissions</a></li>
+                                            <li><a href="#"><span class="userGroups-sideMenu"></span>User Groups</a></li>
+                                            <li><a href="#"><span class="sysNotif-sideMenu"></span>Manage System Notifications</a></li>
+                                            <li><a href="#"><span class="logout-sideMenu"></span>Log Out</a></li>
+                                        </ul><!-- END of .child_menu -->
+                                    </div>
+                                </li>
+                            </ul><!-- END of .side_menu -->
+                        </div><!-- END of .sidebar -->                    
+
+                    </div><!-- END of .spriteOutput -->
+
+                    <div class="spriteCode">
+                        <h3>HTML:</h3>
+                        <pre>
+                            <code class="language-markup">
+&lt;!-----------    SIDEBAR    -----------&gt;                            
+&lt;div class="sidebar"&gt;
+    &lt;span class="hamburger-sideMenu"&gt;&lt;/span&gt;&lt;!-- END of .hamburger-menu --&gt;
+
+    &lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+    &lt;ul class="side-menu"&gt;
+        &lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;&lt;span class="home-sideMenu"&gt;&lt;/span&gt;Dashboard&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;div&gt;&lt;a&gt;&lt;span class="lists-sideMenu"&gt;&lt;/span&gt;Lists &lt;span class="chevron-right-secondary"&gt;&lt;/span&gt;&lt;span class="dn chevron-down-secondary"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;div&gt;&lt;a&gt;&lt;span class="settings-sideMenu"&gt;&lt;/span&gt;Settings &lt;span class="chevron-right-secondary"&gt;&lt;/span&gt;&lt;span class="dn chevron-down-secondary"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;/ul&gt;&lt;!-- END of .side_menu --&gt;
+&lt;/div&gt;&lt;!-- END of .sidebar --&gt;
+
+&lt;div class="sidebar"&gt;
+    &lt;span class="hamburger-sideMenu"&gt;&lt;/span&gt;&lt;!-- END of .hamburger-menu --&gt;
+
+    &lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+    &lt;ul class="side-menu"&gt;
+        &lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;&lt;span class="home-sideMenu"&gt;&lt;/span&gt;Dashboard&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;
+            &lt;div&gt;&lt;a&gt;&lt;span class="lists-sideMenu"&gt;&lt;/span&gt;Lists &lt;span class="dn chevron-right-secondary"&gt;&lt;/span&gt;&lt;span class="chevron-down-secondary"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;div&gt;
+                &lt;ul class="child-menu"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;DK Eyewitness&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Top 300 Travel Series&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Spring Top 100 Antiques &amp; Collectibles&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Top 100 Occupations &amp; Careers&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Harris Infosource&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;&lt;!-- END of .child_menu --&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+                &lt;ul class="child-menu"&gt;
+                    &lt;li class="ta-r"&gt;
+                        &lt;span&gt;
+                            &lt;a href="#"&gt;See More &lt;span class="chevron-seeMore-secondary"&gt;&lt;/span&gt;&lt;/a&gt;&lt;br /&gt;
+                            &lt;span&gt;User Group:&lt;br /&gt;
+                            &lt;a href="#"&gt;Standing Orders Team&lt;/a&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;&lt;!-- END of .child_menu --&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;&lt;a&gt;&lt;span class="settings-sideMenu"&gt;&lt;/span&gt;Settings &lt;span class="chevron-right-secondary"&gt;&lt;/span&gt;&lt;span class="dn chevron-down-secondary"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;&lt;!-- END of .side_menu --&gt;
+&lt;/div&gt;&lt;!-- END of .sidebar --&gt;
+
+&lt;div class="sidebar"&gt;
+    &lt;span class="hamburger-sideMenu"&gt;&lt;/span&gt;&lt;!-- END of .hamburger-menu --&gt;
+
+    &lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+    &lt;ul class="side-menu"&gt;
+        &lt;li&gt;&lt;div&gt;&lt;a href="#"&gt;&lt;span class="home-sideMenu"&gt;&lt;/span&gt;Dashboard&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+        &lt;li&gt;
+            &lt;div&gt;&lt;a&gt;&lt;span class="lists-sideMenu"&gt;&lt;/span&gt;Lists &lt;span class="chevron-right-secondary"&gt;&lt;/span&gt;&lt;span class="dn chevron-down-secondary"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="active"&gt;
+            &lt;div&gt;&lt;a&gt;&lt;span class="settings-sideMenu"&gt;&lt;/span&gt;Settings &lt;span class="dn chevron-right-secondary"&gt;&lt;/span&gt;&lt;span class="chevron-down-secondary"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;div&gt;
+                &lt;ul class="child-menu"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;span class="myProfile-sideMenu"&gt;&lt;/span&gt;My Profile&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;span class="helpSupport-sideMenu"&gt;&lt;/span&gt;Help &amp; Support&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;span class="userPermissions-sideMenu"&gt;&lt;/span&gt;Manage User Permissions&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;span class="userGroups-sideMenu"&gt;&lt;/span&gt;User Groups&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;span class="sysNotif-sideMenu"&gt;&lt;/span&gt;Manage System Notifications&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;&lt;span class="logout-sideMenu"&gt;&lt;/span&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;&lt;!-- END of .child_menu --&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;&lt;!-- END of .side_menu --&gt;
+&lt;/div&gt;&lt;!-- END of .sidebar --&gt;                         
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                    <div class="spriteCode">
+                        <h3>CSS:</h3>
+                        <pre>
+                            <code class="language-css">
+/***************      NAV &amp; MENUS       *************/
+    /***************      SIDEBAR       *************/
+    .sidebar {background-color: #3B4354; border-right: 1px solid #2F3C48; float: left; padding: 10px 0px; width: 240px; min-height: 600px;}
+        .sidebar li {list-style: none;}
+        .sidebar li div {padding: 12px 15px;}
+        .sidebar li div:nth-of-type(2), .sidebar li div:nth-of-type(3) {padding: 0px;}
+        .sidebar li a, .sidebar li a:hover, .sidebar li a:focus {color: #FFFFFF;}
+        .sidebar span {display: inline-block;}
+
+        .hamburger-sideMenu {background-position: -803px -112px; width: 28px; height: 24px; float: right; margin-right: 15px; margin-bottom: 40px;}
+        .home-sideMenu {background-position: -837px -111px; width: 27px; height: 28px;}
+        .lists-sideMenu {background-position: -871px -112px; width: 23px; height: 21px;}
+        .settings-sideMenu {background-position: -901px -112px; width: 23px; height: 24px;}
+        .myProfile-sideMenu {background-position: -719px -195px; width: 18px; height: 22px;}
+        .helpSupport-sideMenu {background-position: -744px -196px; width: 22px; height: 22px;}
+        .userPermissions-sideMenu {background-position: -772px -196px; width: 27px; height: 24px;}
+        .userGroups-sideMenu {background-position: -806px -197px; width: 24px; height: 17px;}
+        .sysNotif-sideMenu {background-position: -1085px -58px; width: 24px; height: 20px;}
+        .logout-sideMenu {background-position: -838px -194px; width: 17px; height: 27px;}
+        .chevron-right-secondary {background-position: -763px -128px; width: 8px; height: 14px; margin-right: 0px !important; float: right !important; margin-top: 5px;}
+        .chevron-down-secondary {background-position: -778px -128px; width: 14px; height: 8px; margin-right: 0px !important; float: right !important; margin-top: 9px;}
+        .chevron-seeMore-secondary {background-position: -783px -112px; width: 15px; height: 9px; margin-right: 0px !important; float: right !important; margin-top: 3px;}
+
+        .sidebar ul.side-menu {padding-left: 0px;}
+        .sidebar ul.side-menu > li {border-bottom: 1px solid #2F3C48; font-size: 18px; font-weight: 500; cursor: pointer;}
+        .sidebar ul.side-menu > li:first-of-type {border-top: 1px solid #2F3C48;}
+        .sidebar ul.side-menu > li >div:first-of-type:hover {background-color: #485266;}
+        .sidebar ul.side-menu > li.active > div:first-of-type {background-color: #485266; border-bottom: 1px solid #2F3C48;}
+        .sidebar ul.side-menu > li a:hover {text-decoration: none;}
+        .sidebar ul.side-menu > li a span {margin-right: 15px; float: left;}
+        .sidebar ul.side-menu > li ul.child-menu {padding: 0px;}
+        .sidebar ul.side-menu > li:last-of-type ul.child-menu li:last-of-type {border-bottom: none !important; padding: 12px 10px 17px 55px;}
+        .sidebar ul.side-menu > li ul.child-menu li {border-bottom: 1px solid #CCCCCC; padding: 10px 10px 10px 55px; line-height: 1.2; font-size: 16px;}
+        .sidebar ul.side-menu > li ul.child-menu li:hover {background-color: #485266;}
+        .sidebar ul.side-menu > li ul.child-menu li.ta-r {font-size: 14px;}
+        .sidebar ul.side-menu > li ul.child-menu li.ta-r span span {font-style: italic; font-size: 12px; color: #FFFFFF;}
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                </div><!-- END of .col-lg-12 text-center -->
+            </div><!-- END of .row -->
+        </div><!-- END of .container -->
+    </section><!-- END of #menus-sidebar -->
+
+
+    <section id="menus-user">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Menus - User</h2>
+                    <hr class="primary">
+                    <div class="spriteOutput">
+                        <h3>OUTPUT:</h3>
+                        <div id="userMenuExample">
+                            <div class="user">
+                                <span class="profilePic-default-sm"></span>
+                                <span class="userID">hall_kennedy </span>
+                                <span class="chevron-down-primary"></span>
+                            </div><!-- END of .user -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="menu-drop">
+                                <ul>
+                                    <li><a href="#"><span><span class="myProfile-userMenu"></span></span><span>My Profile</span></a></li>
+                                    <li><a href="#"><span><span class="helpSupport-userMenu"></span></span><span>Help &amp; Support</span></a></li>
+                                    <li><a href="#"><span><span class="userPermissions-userMenu"></span></span><span>Manage User Permissions</span></a></li>
+                                    <li><a href="#"><span><span class="userGroups-userMenu"></span></span><span>User Groups</span></a></li>
+                                    <li><a href="#"><span><span class="sysNotif-userMenu"></span></span><span>Manage System Notifications</span></a></li>
+                                    <li><a href="#"><span><span class="logout-userMenu"></span></span><span>Log Out</span></a></li>
+                                </ul>
+                            </div><!-- END of .menu-drop -->
+                        </div><!-- END of #userMenuExample -->
+                    </div><!-- END of .spriteOutput -->
+
+                    <div class="spriteCode">
+                        <h3>HTML:</h3>
+                        <pre>
+                            <code class="language-markup">
+&lt;!-----------    USER MENU    -----------&gt;                                
+&lt;div class="user"&gt;
+    &lt;span class="profilePic-default-sm"&gt;&lt;/span&gt;
+    &lt;span class="userID"&gt;hall_kennedy &lt;/span&gt;
+    &lt;span class="chevron-down-primary"&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;!-- END of .user --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="menu-drop"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="myProfile-userMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;My Profile&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="helpSupport-userMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;Help &amp; Support&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="userPermissions-userMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;Manage User Permissions&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="userGroups-userMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;User Groups&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="sysNotif-userMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;Manage System Notifications&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="logout-userMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;Log Out&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;&lt;!-- END of .menu-drop --&gt;
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                    <div class="spriteCode">
+                        <h3>CSS:</h3>
+                        <pre>
+                            <code class="language-css">
+/***************      NAV &amp; MENUS       *************/                            
+/***************      USER MENU         *************/
+    .user {float: right; color: #757575; font-size: 18px;}
+        .profilePic-default-sm {background-position: -715px -112px; width: 41px; height: 41px; float: left; margin-right: 8px;}
+        .userID {float: left; margin-top: 5px;}
+        .chevron-down-primary {background-position: -761px -112px; width: 14px; height: 8px; float: left; margin: 15px 0px 0px 8px;}
+    .menu-drop {width: 270px; min-height: 250px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; float: right; margin-top: 12px;}
+        .menu-drop ul {padding: 0px; margin: 0px;}
+        .menu-drop ul li {list-style: none; border-bottom: 1px solid #DADADA; font-size: 14px; font-weight: 500; cursor: pointer; padding: 12px 15px;}
+        .menu-drop ul li:hover {background-color: #F1F1F1;}
+        .menu-drop ul li:last-of-type {border-bottom: none;}
+        .menu-drop ul li a, .menu-drop ul li a:hover, .menu-drop ul li a:focus {color: #3B4354; text-decoration: none;}
+        .menu-drop ul li a > span:first-of-type {margin: 0px 11px 0px 0px; width: 30px; max-height: 40px; float: left;}
+        .menu-drop ul li a span:first-of-type span {float: left;}
+        .menu-drop ul li a span:nth-of-type(2) {}
+        .myProfile-userMenu {background-position: -719px -164px; width: 18px; height: 22px;}
+        .helpSupport-userMenu {background-position: -744px -164px; width: 22px; height: 22px;}
+        .userPermissions-userMenu {background-position: -772px -164px; width: 27px; height: 24px;}
+        .userGroups-userMenu {background-position: -806px -166px; width: 24px; height: 17px;}
+        .sysNotif-userMenu {background-position: -1119px -58px; width: 24px; height: 20px;}
+        .logout-userMenu {background-position: -838px -163px; width: 17px; height: 27px;}                            
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->               
+
+                </div><!-- END of .col-lg-12 text-center -->
+            </div><!-- END of .row -->
+        </div><!-- END of .container -->
+    </section><!-- END of #menus-user -->
+
+
+    <section class="bg-primary" id="menus-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Menus - Item</h2>
+                    <hr class="primary">
+                    <div class="spriteOutput">
+                        <h3>OUTPUT:</h3>
+                        <div id="itemMenuExample">
+                            <span class="chevron-down-dkprimary"></span>
+    
+                            <div class="clear"></div><!-- END of .clear -->
+    
+                            <div class="menu-drop">
+                                <ul>
+                                    <li><a href="#"><span><span class="edit-listItemMenu"></span></span><span>Edit List</span></a></li>
+                                    <li><a href="#"><span><span class="setExp-listItemMenu"></span></span><span>Set Expiration Date</span></a></li>
+                                    <li><a href="#"><span><span class="delete-listItemMenu"></span></span><span>Delete List</span></a></li>
+                                </ul>
+                            </div><!-- END of .menu-drop -->
+                        </div><!-- END of #itemMenuExample -->
+
+                        <div id="filterMenuExample">
+                            <div class="sectionHeader blue">
+                                <span class="chevron-down-secondary"></span>
+                            </div><!-- END of .sectionHeader -->
+    
+                            <div class="clear"></div><!-- END of .clear -->
+    
+                            <div class="menu-drop">
+                                <ul>
+                                    <li><a href="#">All</a></li>
+                                    <li><a href="#">This Week</a></li>
+                                    <li><a href="#">Next Week</a></li>
+                                    <li><a href="#">This Month</a></li>
+                                    <li><a href="#">Next Month</a></li>
+                                    <li><a href="#">Custom Date</a></li>
+                                </ul>
+                            </div><!-- END of .menu-drop -->
+                        </div><!-- END of #filterMenuExample -->
+                    </div><!-- END of .spriteOutput -->
+
+                    <div class="spriteCode">
+                        <h3>HTML:</h3>
+                        <pre>
+                            <code class="language-markup">
+&lt;!-----------    ITEM MENU    -----------&gt;                             
+&lt;div id="itemMenuExample"&gt;
+    &lt;span class="chevron-down-dkprimary"&gt;&lt;/span&gt;
+
+    &lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+    &lt;div class="menu-drop"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="edit-listItemMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;Edit List&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="setExp-listItemMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;Set Expiration Date&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;&lt;span class="delete-listItemMenu"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span&gt;Delete List&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!-- END of .menu-drop --&gt;
+&lt;/div&gt;&lt;!-- END of #itemMenuExample --&gt;
+
+&lt;!-----------    FILTER MENU    -----------&gt;    
+&lt;div id="filterMenuExample"&gt;
+    &lt;div class="sectionHeader"&gt;
+        &lt;span class="chevron-down-secondary"&gt;&lt;/span&gt;
+    &lt;/div&gt;&lt;!-- END of .sectionHeader --&gt;
+
+    &lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+    &lt;div class="menu-drop"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;All&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;This Week&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Next Week&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;This Month&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Next Month&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Custom Date&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!-- END of .menu-drop --&gt;
+&lt;/div&gt;&lt;!-- END of #filterMenuExample --&gt;
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                    <div class="spriteCode">
+                        <h3>CSS:</h3>
+                        <pre>
+                            <code class="language-css">
+/***************      NAV &amp; MENUS       *************/                            
+/***************      ITEM MENU         *************/
+    #itemMenuExample .menu-drop {width: 270px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; float: left; margin-top: 5px;}
+    #itemMenuExample .menu-drop ul {padding: 0px; margin: 0px;}
+    #itemMenuExample .menu-drop ul li {list-style: none; border-bottom: 1px solid #DADADA; font-size: 14px; font-weight: 500; cursor: pointer; padding: 12px 15px;}
+    #itemMenuExample .menu-drop ul li:hover {background-color: #F1F1F1;}
+    #itemMenuExample .menu-drop ul li:last-of-type {border-bottom: none;}
+    #itemMenuExample .menu-drop ul li a, .menu-drop ul li a:hover, .menu-drop ul li a:focus {color: #3B4354; text-decoration: none;}
+    #itemMenuExample .menu-drop ul li a > span:first-of-type {margin: 0px 11px 0px 0px; width: 30px; max-height: 40px; float: left;}
+    #itemMenuExample .menu-drop ul li a span:first-of-type span {float: left;}
+    .chevron-down-dkprimary {background-position: -778px -142px; width: 14px; height: 8px; float: left;}
+    .edit-listItemMenu {background-position: -871px -142px; width: 23px; height: 21px;}
+    .setExp-listItemMenu {background-position: -901px -142px; width: 23px; height: 25px;}
+    .delete-listItemMenu {background-position: -963px -141px; width: 22px; height: 23px;}
+
+/***************      FILTER MENU       *************/
+    #filterMenuExample .sectionHeader {height: 40px; background-color: #7DB2CE;}
+    #filterMenuExample .sectionHeader .chevron-down-secondary {background-position: -778px -128px; width: 14px; height: 8px; margin-right: 14px !important; float: right !important; margin-top: 16px;}
+    #filterMenuExample .menu-drop {width: 170px; float: right; border: 1px solid #CCCCCC; background-color: #FFFFFF;}
+    #filterMenuExample .menu-drop ul {padding-left: 0px;margin-bottom: 0px;}
+    #filterMenuExample .menu-drop ul li {list-style: none; font-size: 14px; font-weight: 500; cursor: pointer; padding: 6px 15px;}
+    #filterMenuExample .menu-drop ul li:hover {background-color: #F1F1F1;}
+    #filterMenuExample .menu-drop ul li:last-of-type {border-top: 1px solid #DADADA; padding: 12px 15px;}
+    #filterMenuExample .menu-drop ul li a, .menu-drop ul li a:hover, .menu-drop ul li a:focus {color: #3B4354; text-decoration: none;}                            
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                </div><!-- END of .col-lg-12 text-center -->
+            </div><!-- END of .row -->
+        </div><!-- END of .container -->
+    </section><!-- END of #menus-item -->
+
+    <section id="icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Additional Icons</h2>
+                    <hr class="primary">
+                    <div class="spriteOutput">
+                        <h3>OUTPUT:</h3>
+                        <div class="example">
+                            <h4>EXAMPLE 1</h4>
+                            <p class="title">Mockup example &mdash; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/F7B29FAF4BA4728257C805D6FE63E2EA" target="_blank">Category List</a>:</p>
+                            <!------------ EXAMPLE 1 ------------>
+                            <div class="samp">
+                                <a href="#" class="item-edit-pencil-primary"></a>
+                                <a href="#" class="item-delete-primary"></a>
+                            </div><!-- END of .samp -->
+                            
+                            <div class="samp blue">
+                                <a href="#" class="item-edit-pencil-secondary"></a>
+                                <a href="#" class="item-delete-secondary"></a>
+                            </div><!-- END of .samp -->
+
+                            <div class="samp">
+                                <a href="#" class="system-notif-active"><span class="count onedigit">3</span></a>
+                                <a href="#" class="my-notif-active"><span class="count threedigits">820</span></a>
+                                <a href="#" class="system-notif-inactive"></a>
+                                <a href="#" class="my-notif-inactive"></a>
+                            </div><!-- END of .samp -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="samp">
+                                <button class="primaryBtn action"><span class="lists-btn"></span>Create a New List</button>
+                            </div><!-- END of .samp -->
+
+                            <div class="samp">
+                                <a href="#" class="manual-sort-up-active"></a>
+                                <a href="#" class="manual-sort-up-inactive"></a>
+                                <div class="clear"></div><!-- END of .clear -->
+                                <a href="#" class="manual-sort-down-active"></a>
+                                <a href="#" class="manual-sort-down-inactive"></a>
+                            </div><!-- END of .samp -->
+                        </div><!-- END of .example -->
+
+                        <div class="example">
+                            <h4>EXAMPLE 2</h4>
+                            <p class="title">Mockup example  &mdash; Edit List POPUP - <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/3F32EA4213AB2DC483B905C4AD9E92DC" target="_blank">List Details</a> &amp; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/55ACBB98A8A2EF808DEB05C7773FD594" target="_blank">Notifications</a>:</p>
+                            <!------------ EXAMPLE 2 ------------>
+                            <div class="samp">
+                                <div class="popupHeader green">
+                                    <a href="#" class="close-modal"></a>
+                                </div><!-- END of .popupHeader -->                                
+                            </div><!-- END of .samp -->
+                            
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="samp">
+                                <a href="#"><span class="item-save-primary-modal"></span></a>
+                                <a href="#"><span class="item-delete-primary-modal"></span></a>
+                                <a href="#"><span class="item-notif-primary-modal"></span></a>
+                                <a href="#" class="item-loc-delete-modal"></a>                                
+                            </div><!-- END of .samp -->
+
+                            <div class="samp pubOpt">
+                                <input type="radio" class="blueRadio" id="saveDraft" name="groupName" value=""> <label for="saveDraft"><span></span>Save as Draft</label>
+                                <input type="radio" class="blueRadio" id="setPubDate" name="groupName" value="" checked> <label for="setPubDate"><span></span>Set a Publish Date</label>
+                            </div><!-- END of .samp -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="samp">
+                                <a href="#" class="datepicker-cal-modal"></a>
+                                <a href="#" class="increase-up"></a>
+                                <a href="#" class="decrease-down"></a>
+                            </div><!-- END of .samp -->
+
+                            <div class="samp">
+                                <span class="upload"></span>
+                                <a href="#" class="add-notif"></a>
+                                <a href="#" class="delete-notif"></a>
+                                <a href="#" class="chevron-goback-modal"></a>
+                                <span class="question-info"></span>
+                            </div><!-- END of .samp -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="samp notif">
+                                <input type="checkbox" class="primaryChkbx" id="notifTypeA" checked> <label for="notifTypeA" id="notifTypeA-label"><span></span>Anything changes with this item</label><br />
+                                <input type="checkbox" class="primaryChkbx" id="notifTypeB"> <label for="notifTypeB" id="notifTypeB-label"><span></span>This list is about to expire.</label><br />
+                            </div><!-- END of .samp -->
+                        </div><!-- END of .example -->
+
+                        <div class="example">
+                            <h4>EXAMPLE 3</h4>
+                            <p class="title">Mockup example  &mdash; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/811E411C57177DCB0139057B78E0EBE7" target="_blank">Dashboard</a> &amp; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/9FAA9C904A74A55AC3F50580BD5420DC" target="_blank">Calendar Expiring Lists</a>:</p>
+                            <!------------ EXAMPLE 3 ------------>
+                            <div class="samp">
+                                <div id="calendarExample">
+                                    <div class="sectionHeader darkBlue">
+                                        <div id="prev">
+                                            <a class="cal-prev" href="#"></a><!-- END of .cal-prev -->
+                                        </div><!-- END of #prev -->
+                                        <div id="title">
+                                            <h2>Manage Expiring Lists</h2>
+                                            <h1>March 2016</h1>
+                                        </div><!-- END of #title -->
+                                        <div id="next">
+                                            <a class="cal-next" href="#"></a><!-- END of .cal-next -->
+                                        </div><!-- END of #prev -->
+                                    </div><!-- END of .sectionHeader -->
+                                </div><!-- END of #calendarExample -->                                
+                            </div><!-- END of .samp -->
+                            
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="samp">
+                                <span class="cal-currDay"><span class="day onedigit">9</span></span><br><br>
+                                <span class="cal-expiring"></span>
+                            </div><!-- END of .samp -->
+
+                            <div class="samp">
+                                <a href="#" class="sort-ascending"></a>
+                                <div class="clear"></div><!-- END of .clear -->
+                                <a href="#" class="sort-descending"></a>
+                            </div><!-- END of .samp -->
+
+                            <div class="samp cal">
+                                <input type="checkbox" class="secondaryChkbx" id="listNameA" checked> <label for="listNameA" id="listNameA-label"><span></span>Peterson's College Test Prep</label><br />
+                                <input type="checkbox" class="secondaryChkbx" id="listNameB"> <label for="listNameB" id="listNameB-label"><span></span>State Specific Business - VT</label><br />
+                                <input type="checkbox" class="secondaryChkbx" id="listNameC"> <label for="listNameC" id="listNameC-label"><span></span>Top 100 Occupations / Careers....</label>
+                            </div><!-- END of .samp -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="samp">
+                                <p><b>*NOTE:</b> A separate image <a href="img/dropdown-primary.png" download>('img/dropdown-primary.png')</a> is used for the dropdown caret:</p>
+                                <div class="selectPrimary">
+                                    <select name="userGroups" id="">
+                                        <option value="userGroupA">User Group A</option>
+                                        <option value="userGroupB">User Group B</option>
+                                        <option value="userGroupC">User Group C</option>
+                                        <option value="userGroupD">User Group D</option>
+                                        <option value="userGroupE">User Group E</option>
+                                        <option value="userGroupF">User Group F</option>
+                                        <option value="userGroupG">User Group G</option>
+                                    </select>
+                                </div><!-- END of .selectPrimary -->
+                            </div><!-- END of .samp -->
+                        </div><!-- END of .example -->
+
+                        <div class="example">
+                            <h4>EXAMPLE 4</h4>
+                            <p class="title">Mockup example  &mdash; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/9D26BA0B1B5E40A87CB1294270BAE06E" target="_blank">My Profile</a> &amp; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/481440F79E671F66CE6F4F350FE43CE3" target="_blank">Manage User Groups</a>:</p>
+                            <!------------ EXAMPLE 4 ------------>
+                            <div class="samp">
+                                <span class="profilePic-default-lg"></span>
+
+                                <p><b>*NOTE:</b> A separate image <a href="img/dropdown-secondary.png" download>('img/dropdown-secondary.png')</a> is used for the dropdown caret:</p>
+                                <div class="selectSecondary">
+                                    <select name="userGroups" id="">
+                                        <option value="userGroupA">User Group A</option>
+                                        <option value="userGroupB">User Group B</option>
+                                        <option value="userGroupC">User Group C</option>
+                                        <option value="userGroupD">User Group D</option>
+                                        <option value="userGroupE">User Group E</option>
+                                        <option value="userGroupF">User Group F</option>
+                                        <option value="userGroupG">User Group G</option>
+                                    </select>
+                                </div><!-- END of .selectSecondary -->
+                            </div><!-- END of .samp -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="samp">
+                                <a href="#"><span class="user-mng-user-grps"></span></a>
+                            </div><!-- END of .samp -->
+                        </div><!-- END of .example -->
+
+                        <div class="clear"></div><!-- END of .clear -->
+
+                        <div class="example">
+                            <h4>EXAMPLE 5</h4>
+                            <p class="title">Mockup example  &mdash; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/39C9F40A66D39817918A8E51FE0C22B0" target="_blank">Manage System Notifications</a> &amp;<br /><a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/D81E869733FDE47668E32A3067D994D6" target="_blank">Edit User Group</a>:</p>
+                            <!------------ EXAMPLE 5 ------------>
+                            <div class="samp">
+                                <span class="attachment"></span>
+                            </div><!-- END of .samp -->
+
+                            <div class="samp">
+                                <div class="input-search">
+                                    <input type="text" placeholder="User Name / Login ID" />
+                                    <button class="search-modal"></button>
+                                </div><!-- END of .input-search -->
+                            </div><!-- END of .samp -->
+
+                            <div class="clear"></div><!-- END of .clear -->
+
+                            <div class="samp">
+                                <a href="#" class="add-user"></a><br />
+                                <a href="#" class="remove-user"></a>
+                            </div><!-- END of .samp -->
+
+                            <div class="samp">
+                                <button class="primaryBtn plain"><span class="clear-btn"></span>Clear List</button>
+                            </div><!-- END of .samp -->
+                        </div><!-- END of .example -->
+
+                        <div class="example">
+                            <h4>EXAMPLE 6</h4>
+                            <p class="title">Mockup example  &mdash; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/4D3591BEF721E05C526F05DD71044113" target="_blank">Notifications</a>:</p>
+                            <!------------ EXAMPLE 6 ------------>
+                            <div class="samp">
+                                <a href="#" class="trashbin"></a>
+                                <button class="primaryBtn action"><span class="cal-light"></span>Set A New Expiration Date</button>
+                            </div><!-- END of .samp -->
+
+                            <div class="samp">
+                                <span class="newNotif"></span>
+                            </div><!-- END of .samp -->
+                        </div><!-- END of .example -->
+
+                        <div class="clear"></div><!-- END of .clear -->
+
+                        <div class="example">
+                            <h4>EXAMPLE 7</h4>
+                            <p class="title">Mockup example  &mdash; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/BDB9E1E58DC89C28B1E26465AC368E2C" target="_blank">Success</a> &amp; <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/3C2DD0BA100A7CBE49876475E6DDF96D" target="_blank">Error</a>:</p>
+                            <!------------ EXAMPLE 7 ------------>
+                            <div class="samp">
+                                <span class="ico-success"></span>
+                                <span class="ico-error"></span>
+                            </div><!-- END of .samp -->
+                        </div><!-- END of .example -->
+
+                    </div><!-- END of .spriteOutput -->
+
+                    <div class="spriteCode">
+                        <h3>HTML:</h3>
+                        <pre>
+                            <code class="language-markup">
+ &lt;!------------ EXAMPLE 1 ------------&gt;
+&lt;div class="samp"&gt;
+    &lt;a href="#" class="item-edit-pencil-primary"&gt;&lt;/a&gt;
+    &lt;a href="#" class="item-delete-primary"&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp blue"&gt;
+    &lt;a href="#" class="item-edit-pencil-secondary"&gt;&lt;/a&gt;
+    &lt;a href="#" class="item-delete-secondary"&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;a href="#" class="system-notif-active"&gt;&lt;span class="count onedigit"&gt;3&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="my-notif-active"&gt;&lt;span class="count threedigits"&gt;820&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="system-notif-inactive"&gt;&lt;/a&gt;
+    &lt;a href="#" class="my-notif-inactive"&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;button class="primaryBtn action"&gt;&lt;span class="lists-btn"&gt;&lt;/span&gt;Create a New List&lt;/button&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;a href="#" class="manual-sort-up-active"&gt;&lt;/a&gt;
+    &lt;a href="#" class="manual-sort-up-inactive"&gt;&lt;/a&gt;
+    &lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+    &lt;a href="#" class="manual-sort-down-active"&gt;&lt;/a&gt;
+    &lt;a href="#" class="manual-sort-down-inactive"&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;!------------ EXAMPLE 2 ------------&gt;
+&lt;div class="samp"&gt;
+    &lt;div class="popupHeader green"&gt;
+        &lt;a href="#" class="close-modal"&gt;&lt;/a&gt;
+    &lt;/div&gt;&lt;!-- END of .popupHeader --&gt;                                
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;a href="#"&gt;&lt;span class="item-save-primary-modal"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#"&gt;&lt;span class="item-delete-primary-modal"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#"&gt;&lt;span class="item-notif-primary-modal"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="item-loc-delete-modal"&gt;&lt;/a&gt;                                
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp pubOpt"&gt;
+    &lt;input type="radio" class="blueRadio" id="saveDraft" name="groupName" value=""&gt; &lt;label for="saveDraft"&gt;&lt;span&gt;&lt;/span&gt;Save as Draft&lt;/label&gt;
+    &lt;input type="radio" class="blueRadio" id="setPubDate" name="groupName" value="" checked&gt; &lt;label for="setPubDate"&gt;&lt;span&gt;&lt;/span&gt;Set a Publish Date&lt;/label&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;a href="#" class="datepicker-cal-modal"&gt;&lt;/a&gt;
+    &lt;a href="#" class="increase-up"&gt;&lt;/a&gt;
+    &lt;a href="#" class="decrease-down"&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;span class="upload"&gt;&lt;/span&gt;
+    &lt;a href="#" class="add-notif"&gt;&lt;/a&gt;
+    &lt;a href="#" class="delete-notif"&gt;&lt;/a&gt;
+    &lt;a href="#" class="chevron-goback-modal"&gt;&lt;/a&gt;
+    &lt;span class="question-info"&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="samp notif"&gt;
+    &lt;input type="checkbox" class="primaryChkbx" id="notifTypeA" checked&gt; &lt;label for="notifTypeA" id="notifTypeA-label"&gt;&lt;span&gt;&lt;/span&gt;Anything changes with this item&lt;/label&gt;&lt;br /&gt;
+    &lt;input type="checkbox" class="primaryChkbx" id="notifTypeB"&gt; &lt;label for="notifTypeB" id="notifTypeB-label"&gt;&lt;span&gt;&lt;/span&gt;This list is about to expire.&lt;/label&gt;&lt;br /&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;!------------ EXAMPLE 3 ------------&gt;
+&lt;div class="samp"&gt;
+    &lt;div id="calendarExample"&gt;
+        &lt;div class="sectionHeader darkBlue"&gt;
+            &lt;div id="prev"&gt;
+                &lt;a class="cal-prev" href="#"&gt;&lt;/a&gt;&lt;!-- END of .cal-prev --&gt;
+            &lt;/div&gt;&lt;!-- END of #prev --&gt;
+            &lt;div id="title"&gt;
+                &lt;h2&gt;Manage Expiring Lists&lt;/h2&gt;
+                &lt;h1&gt;March 2016&lt;/h1&gt;
+            &lt;/div&gt;&lt;!-- END of #title --&gt;
+            &lt;div id="next"&gt;
+                &lt;a class="cal-next" href="#"&gt;&lt;/a&gt;&lt;!-- END of .cal-next --&gt;
+            &lt;/div&gt;&lt;!-- END of #prev --&gt;
+        &lt;/div&gt;&lt;!-- END of .sectionHeader --&gt;
+    &lt;/div&gt;&lt;!-- END of #calendarExample --&gt;                                
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;span class="cal-currDay"&gt;&lt;span class="day onedigit"&gt;9&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+    &lt;span class="cal-expiring"&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;a href="#" class="sort-ascending"&gt;&lt;/a&gt;
+    &lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+    &lt;a href="#" class="sort-descending"&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp cal"&gt;
+    &lt;input type="checkbox" class="secondaryChkbx" id="listNameA" checked&gt; &lt;label for="listNameA" id="listNameA-label"&gt;&lt;span&gt;&lt;/span&gt;Peterson's College Test Prep&lt;/label&gt;&lt;br /&gt;
+    &lt;input type="checkbox" class="secondaryChkbx" id="listNameB"&gt; &lt;label for="listNameB" id="listNameB-label"&gt;&lt;span&gt;&lt;/span&gt;State Specific Business - VT&lt;/label&gt;&lt;br /&gt;
+    &lt;input type="checkbox" class="secondaryChkbx" id="listNameC"&gt; &lt;label for="listNameC" id="listNameC-label"&gt;&lt;span&gt;&lt;/span&gt;Top 100 Occupations / Careers....&lt;/label&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;p&gt;&lt;b&gt;*NOTE:&lt;/b&gt; A separate image is used for the dropdown caret:&lt;/p&gt;
+    &lt;div class="selectPrimary"&gt;
+        &lt;select name="userGroups" id=""&gt;
+            &lt;option value="userGroupA"&gt;User Group A&lt;/option&gt;
+            &lt;option value="userGroupB"&gt;User Group B&lt;/option&gt;
+            &lt;option value="userGroupC"&gt;User Group C&lt;/option&gt;
+            &lt;option value="userGroupD"&gt;User Group D&lt;/option&gt;
+            &lt;option value="userGroupE"&gt;User Group E&lt;/option&gt;
+            &lt;option value="userGroupF"&gt;User Group F&lt;/option&gt;
+            &lt;option value="userGroupG"&gt;User Group G&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;&lt;!-- END of .selectPrimary --&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;!------------ EXAMPLE 4 ------------&gt;
+&lt;div class="samp"&gt;
+    &lt;span class="profilePic-default-lg"&gt;&lt;/span&gt;
+
+    &lt;p&gt;&lt;b&gt;*NOTE:&lt;/b&gt; A separate image is used for the dropdown caret:&lt;/p&gt;
+    &lt;div class="selectSecondary"&gt;
+        &lt;select name="userGroups" id=""&gt;
+            &lt;option value="userGroupA"&gt;User Group A&lt;/option&gt;
+            &lt;option value="userGroupB"&gt;User Group B&lt;/option&gt;
+            &lt;option value="userGroupC"&gt;User Group C&lt;/option&gt;
+            &lt;option value="userGroupD"&gt;User Group D&lt;/option&gt;
+            &lt;option value="userGroupE"&gt;User Group E&lt;/option&gt;
+            &lt;option value="userGroupF"&gt;User Group F&lt;/option&gt;
+            &lt;option value="userGroupG"&gt;User Group G&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;&lt;!-- END of .selectSecondary --&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;a href="#"&gt;&lt;span class="user-mng-user-grps"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;!------------ EXAMPLE 5 ------------&gt;
+&lt;div class="samp"&gt;
+    &lt;span class="attachment"&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;div class="input-search"&gt;
+        &lt;input type="text" placeholder="User Name / Login ID" /&gt;
+        &lt;button class="search-modal"&gt;&lt;/button&gt;
+    &lt;/div&gt;&lt;!-- END of .input-search --&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt;&lt;!-- END of .clear --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;a href="#" class="add-user"&gt;&lt;/a&gt;&lt;br /&gt;
+    &lt;a href="#" class="remove-user"&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;button class="primaryBtn plain"&gt;&lt;span class="clear-btn"&gt;&lt;/span&gt;Clear List&lt;/button&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;!------------ EXAMPLE 6 ------------&gt;
+&lt;div class="samp"&gt;
+    &lt;a href="#" class="trashbin"&gt;&lt;/a&gt;
+    &lt;button class="primaryBtn action"&gt;&lt;span class="cal-light"&gt;&lt;/span&gt;Set A New Expiration Date&lt;/button&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;div class="samp"&gt;
+    &lt;span class="newNotif"&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+
+&lt;!------------ EXAMPLE 7 ------------&gt;
+&lt;div class="samp"&gt;
+    &lt;span class="ico-success"&gt;&lt;/span&gt;
+    &lt;span class="ico-error"&gt;&lt;/span&gt;
+&lt;/div&gt;&lt;!-- END of .samp --&gt;
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->
+
+                    <div class="spriteCode">
+                        <h3>CSS:</h3>
+                        <pre>
+                            <code class="language-css">
+/***************      ADDITIONAL ICONS      *************/
+    /***************      EXAMPLE 1 *************/
+    span.count {float: right;color: #FFFFFF; font-size: 11px; margin-top: 11px;}
+    span.count.onedigit {margin-right: 14px;}
+    span.count.twodigits {margin-right: 10px;}
+    span.count.threedigits {margin-right: 7px;}
+    .item-edit-pencil-primary {background-position: -716px -257px; width: 27px; height: 26px; float: left; margin-right: 10px;}
+    .item-delete-primary {background-position: -747px -256px; width: 27px; height: 27px; float: left;}
+    .item-edit-pencil-secondary {background-position: -716px -289px; width: 27px; height: 26px; float: left; margin-right: 10px;}
+    .item-delete-secondary {background-position: -747px -288px; width: 27px; height: 27px; float: left;}
+    .system-notif-active {background-position: -464px -271px; width: 57px; height: 46px; float: left; margin-right: 10px;}
+    .my-notif-active {background-position: -528px -271px; width: 50px; height: 49px; float: left; /************/margin-right: 20px;}
+    .system-notif-inactive {background-position: -464px -228px; width: 39px; height: 33px; float: left; margin-right: 10px;}
+    .my-notif-inactive {background-position: -528px -230px; width: 29px; height: 34px; float: left;}
+    .lists-btn {background-position: -871px -112px; width: 23px; height: 21px; float: left; margin-right: 12px;}
+    button.primaryBtn {height: 45px; color: #FFFFFF; text-transform: uppercase; border: none; padding: 0px 12px; /************/float: left;}
+    button.primaryBtn.action {background-color: #51BF87;}
+    .manual-sort-up-active {background-position: -1025px -110px; width: 16px; height: 14px; float: left; margin-bottom: 3px; /************/margin-right: 10px;}
+    .manual-sort-up-inactive {background-position: -1043px -110px; width: 16px; height: 14px; float: left; margin-bottom: 3px;}
+    .manual-sort-down-active {background-position: -1025px -127px; width: 16px; height: 14px; float: left; /************/margin-right: 10px;}
+    .manual-sort-down-inactive {background-position: -1043px -127px; width: 16px; height: 14px; float: left;}
+    
+    /***************      EXAMPLE 2 *************/
+    .popupHeader {height: 55px; padding: 10px; width: 420px;}
+    .close-modal {background-position: -933px -112px; width: 20px; height: 20px; float: right; margin-top: 7px;}
+    .item-save-primary-modal {background-position: -781px -257px; width: 26px; height: 26px;float: left; margin-right: 10px;}
+    .item-delete-primary-modal {background-position: -747px -256px; width: 27px; height: 27px;float: left; margin-right: 10px;}
+    .item-notif-primary-modal {background-position: -859px -256px; width: 26px; height: 30px;float: left; margin-right: 10px;}
+    .item-loc-delete-modal {background-position: -1065px -111px; width: 18px; height: 19px; float: left;}
+    .samp.pubOpt input[type=radio] {display:none;}
+        .samp.pubOpt input[type=radio].blueRadio + label span {display: inline-block; background-position: -1265px -204px; width: 22px; height: 22px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
+        .samp.pubOpt input[type=radio].blueRadio:checked + label span {background-position: -1265px -228px;}
+        .samp.pubOpt label {cursor: pointer; color: #757575; margin-right: 10px;}
+    .datepicker-cal-modal {background-position: -934px -175px; width: 23px; height: 25px; float: left; /************/margin-right: 10px;}
+    .increase-up {background-position: -962px -176px; width: 14px; height: 8px; float: left; /************/margin-right: 5px;}
+    .decrease-down {background-position: -962px -189px; width: 14px; height: 8px; float: left;}
+    .upload {background-position: -1027px -147px; width: 52px; height: 37px; float: left; /************/margin-right: 10px;}
+    .add-notif {background-position: -1088px -140px; width: 20px; height: 19px; float: left; /************/margin-right: 5px;}
+    .delete-notif {background-position: -1088px -165px; width: 19px; height: 19px; float: left; /************/margin-right: 10px;}
+    .chevron-goback-modal {background-position: -1088px -112px; width: 17px; height: 9px; float: left; /************/margin-right: 10px;}
+    .question-info {background-position: -821px -227px; width: 21px; height: 21px; float: left;}
+    .samp.notif input[type=checkbox] {display:none;}
+        .samp.notif input[type=checkbox].primaryChkbx + label span {display: inline-block; background-position: -1265px -253px; width: 22px; height: 22px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
+        .samp.notif input[type=checkbox].primaryChkbx:checked + label span {background-position: -1265px -278px;}
+        .samp.notif label {cursor: pointer; color: #757575; margin-right: 10px;}
+
+    /***************      EXAMPLE 3 *************/
+    #calendarExample {width: 285px;}
+        #calendarExample .sectionHeader {height: 55px;}
+        #calendarExample .sectionHeader #prev {width: 50px; height: 100%; border-right: 1px solid #38729C; float: left;}
+        #calendarExample .sectionHeader #title {float: left; padding: 7px 15px; width: 185px;}
+        #calendarExample .sectionHeader #title h2 {font-family: 'Muli', sans-serif; font-size: 14px; color: #FFFFFF; margin: 0px; text-align: center;}
+        #calendarExample .sectionHeader #title h1 {font-family: 'Muli', sans-serif; font-size: 18px; color: #FFFFFF; margin: 0px; text-align: center; margin-top: 6px;}
+        .cal-prev {background-position: -906px -176px; width: 8px; height: 14px; float: left; margin: 20px 0px 0px 20px;}
+        .cal-next {background-position: -920px -176px; width: 8px; height: 14px; float: left; margin: 20px 0px 0px 20px;}
+        #calendarExample .sectionHeader #next {width: 50px; height: 100%; border-left: 1px solid #38729C; float: left;}
+    .cal-currDay {background-position: -865px -176px; width: 33px; height: 33px; float: left;}
+        .cal-currDay span.day {float: left; color: #FFFFFF; margin-top: 8px; font-size: 12px;}
+        .cal-currDay span.day.onedigit {margin-left: 14px; }
+        .cal-currDay span.day.twodigits {margin-left: 9px; }
+    .cal-expiring {background-position: -906px -201px; width: 5px; height: 5px; float: left;}
+    .sort-ascending {background-position: -809px -141px; width: 9px; height: 9px; float: left; /************/margin-bottom: 5px;}
+    .sort-descending {background-position: -796px -141px; width: 9px; height: 9px; float: left;}
+    .samp.cal input[type=checkbox] {display:none;}
+        .samp.cal input[type=checkbox].secondaryChkbx + label span {display: inline-block; background-position: -1267px -160px; width: 19px; height: 19px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
+        .samp.cal input[type=checkbox].secondaryChkbx:checked + label span {background-position: -1267px -182px;}
+        .samp.cal label {cursor: pointer; color: #004A80; margin-right: 10px;}
+    .selectPrimary {padding: 0; margin: 0; border: 1px solid #ABABAB; width: 200px; overflow: hidden; background-color: #fff; background: url('../img/dropdown-primary.png') no-repeat 95% 50%; }
+    .selectPrimary select {padding: 5px 8px; width: 130%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+    .selectPrimary select:focus {outline: none;}
+
+    /***************      EXAMPLE 4 *************/
+    .profilePic-default-lg {background-position: -592px -229px; width: 82px; height: 82px; float: left; /************/margin-right: 20px;}
+    .selectSecondary {padding: 0; margin: 0; border: 1px solid #7DB2CE; width: 270px; overflow: hidden; background-color: #fff; background: url('../img/dropdown-secondary.png') no-repeat 95% 50%; }
+    .selectSecondary select {padding: 5px 8px; width: 130%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+    .selectSecondary select:focus {outline: none;}
+    .user-mng-user-grps {background-position: -815px -256px; width: 38px; height: 34px; float: left;}
+
+    /***************      EXAMPLE 5 *************/
+    .attachment {background-position: -861px -80px; width: 20px; height: 18px; float: left;}
+    .input-search {width: 251px; height: 26px; /************/float: left;}
+        .input-search input {width: 220px; height: 26px; border-top: 1px solid #7DB2CE; border-right: none; border-bottom: 1px solid #7DB2CE; border-left: 1px solid #7DB2CE; padding: 2px 7px; font-size: 14px; float: left;}
+        .input-search input[placeholder] {color: #AAAAAA;}
+        .input-search input::-webkit-input-placeholder {color: #AAAAAA;}
+        .input-search input:-moz-placeholder {color: #AAAAAA;}
+        .input-search input::-moz-placeholder {color: #AAAAAA;}
+        .input-search input:-ms-input-placeholder {color: #AAAAAA;}
+        .search-modal {background-position: -715px -223px; width: 31px; height: 26px; float: left; border: none; margin-left: -1px;}
+    .add-user {background-position: -989px -113px; width: 30px; height: 21px; float: left; margin-bottom: 30px;}
+    .remove-user {background-position: -989px -140px; width: 30px; height: 21px; float: left;}
+    button.primaryBtn.plain {background-color: #C5C3C3;}
+        .clear-btn {background-position: -959px -111px; width: 23px; height: 23px; float: left; margin-right: 12px;}
+
+    /***************      EXAMPLE 6 *************/
+    .trashbin {background-position: -951px -210px; width: 24px; height: 24px; float: left; /************/margin-right: 30px;}
+    .cal-light {background-position: -983px -175px; width: 23px; height: 25px; float: left; margin-right: 12px;}
+    .newNotif {background-position: -804px -231px; width: 8px; height: 8px; float: left;}
+
+    /***************      EXAMPLE 7 *************/
+    .ico-success {background-position: -853px -228px; width: 27px; height: 20px; float: left; /************/margin-right: 20px;}
+    .ico-error {background-position: -890px -230px; width: 20px; height: 20px; float: left;}
+                            </code>
+                        </pre>
+                    </div><!-- END of .spriteCode -->               
+
+                </div><!-- END of .col-lg-12 text-center -->
+            </div><!-- END of .row -->
+        </div><!-- END of .container -->
+    </section><!-- END of #menus-user -->
+
+
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Download the Sprite</h2>
+                <!-- <a href="img/cms-sprite.png" download class="btn btn-primary btn-xl">Download the Sprite</a> -->
+                <a href="img/cms-sprite.png" download class="btn btn-default btn-xl sr-button">Download Now</a>
+            </div>
+        </div>
+    </aside>
+
+    <section class="bg-primary" id="mockups">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Mockups</h2>
+                    <hr class="primary">
+                    <p>Mockups of the Title Source Standing Orders CMS can be found <a href="https://app.mockflow.com/view/309701436e2f61b9b380c9a8279b91ae#/page/811E411C57177DCB0139057B78E0EBE7" target="_blank">here</a>. Once you view the project, you can use the navigation within the mockup pages, OR to the right of the mockups to navigate through the content.</p>
+                </div>
+            </div><!-- END of .row -->
+        </div><!-- END of .container -->
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="js/prism.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    <!-- Show/Hide Password -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#pw').click(function() {
+                if ($('.loginpassword').attr('type')=='password') {
+                    $('.loginpassword').attr('type', 'text');
+                    $('#hiddenPW').addClass('dn');
+                    $('#visiblePW').removeClass('dn');
+                }
+                else {
+                    $('.loginpassword').attr('type', 'password');
+                    $('#visiblePW').addClass('dn');
+                    $('#hiddenPW').removeClass('dn');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

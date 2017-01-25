@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+Theme Name: TS 360 - Standing Orders CMS Sprite
+Theme URL: http://ts360.baker-taylor.com
+Author: Tiffany Pender
+*/
+
+
+/***************	   ADDITIONAL FONTS		 ****************/
+@font-face {
+font-family: 'Avenir LT Std 35 Light';
+font-style: normal;
+font-weight: normal;
+src: url('../vendors/fonts/AvenirLTStd-Light.woff') format('woff');
+}
+
+/***************	   PAGE STRUCTURE BASICS	 & OTHER	 ****************/
+.fl {float: left;}
+.fr {float: right;}
+.clear {clear: both;}
+.dn {display: none !important;}
+.ta-r {text-align: right;}
+.ta-l {text-align: left;}
+.samp {padding: 10px; float: left;}
+
+/****primary  is gray & secondary is white****/
+.white {background-color: #FFFFFF;}
+.blue {background-color: #7DB2CE;}
+.darkBlue {background-color: #004A80;}
+.green {background-color: #51BF87;}
+
+.header-content-inner span {font-size: 12px;}
+.spriteOutput, .spriteCode {width: 90%; margin: 0 auto; text-align: left; padding-top: 20px; color: #999; font-family: 'Muli', sans-serif !important; /***font-family: 'Lato', sans-serif !important;****/}
+.spriteCode {max-height: 500px; overflow-y: auto;}
+
+
+/***************	  ALL IMAGES	****************/
+.logo-retail, .logo-libEdu, .logo-retail-sm, .logo-libEdu-sm, .login-header, #login-id, #login-pw, #hiddenPW, #visiblePW, .tertiaryChkbx + label span, .lock, .facebook, .linkedin, .twitter, .youtube, .hamburger-sideMenu, .home-sideMenu, .lists-sideMenu, .settings-sideMenu, .myProfile-sideMenu, .helpSupport-sideMenu, .userPermissions-sideMenu, .userGroups-sideMenu, .sysNotif-sideMenu, .logout-sideMenu, .chevron-right-secondary, .chevron-down-secondary, .chevron-seeMore-secondary, .profilePic-default-sm, .chevron-down-primary, .myProfile-userMenu, .helpSupport-userMenu, .userPermissions-userMenu, .userGroups-userMenu, .sysNotif-userMenu, .logout-userMenu, .chevron-down-dkprimary, .edit-listItemMenu, .setExp-listItemMenu, .delete-listItemMenu, .item-edit-pencil-primary, .item-delete-primary, .item-edit-pencil-secondary, .item-delete-secondary, .system-notif-active, .my-notif-active, .system-notif-inactive, .my-notif-inactive, .lists-btn, .manual-sort-up-active, .manual-sort-up-inactive, .manual-sort-down-active, .manual-sort-down-inactive, .close-modal, .item-save-primary-modal, .item-delete-primary-modal, .item-notif-primary-modal, .item-loc-delete-modal, .blueRadio + label span, .datepicker-cal-modal, .increase-up, .decrease-down, .upload, .add-notif, .delete-notif, .chevron-goback-modal, .question-info, .primaryChkbx + label span, .cal-prev, .cal-next, .cal-currDay, .cal-expiring, .sort-ascending, .sort-descending, .secondaryChkbx + label span, .profilePic-default-lg, .user-mng-user-grps, .attachment, .search-modal, .add-user, .remove-user, .clear-btn, .trashbin, .cal-light, .newNotif, .ico-success, .ico-error {background: url('../img/cms-sprite.png') no-repeat;}
+
+
+/***************	  BIG LOGOS	****************/
+.logo-retail {background-position: -5px -55px; width: 236px; height: 161px; /************/float: left; padding-right: 20px;}
+.logo-libEdu {background-position: -255px -53px; width: 450px; height: 160px; /************/float: left;}
+/***************	  SMALL LOGOS     *************/
+.logo-retail-sm {background-position: -6px -237px; width: 151px; height: 103px; /************/float: left; padding-right: 20px;}
+.logo-libEdu-sm {background-position: -168px -237px; width: 281px; height: 100px; /************/float: left;}
+
+/***************	  LOGIN SCREEN	*************/
+.login-header {background-position: 0px 0px; background-repeat: repeat-x; height: 47px; /************/margin-bottom: 30px;}
+.login-box {width: 400px; height: 330px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; font-family: 'Muli', sans-serif !important; /************/float: left; margin-right: 40px;}
+	.login-box label {font-weight: normal;}
+	.login-box .input-box, .login-box button[name=loginBtn] {width: 315px; height: 51px; margin: 30px auto;}
+		.login-box .input-box #login-id {background-position: -716px -53px; width: 65px; height: 51px; float: left;}
+		.login-box .input-box #login-pw {background-position: -787px -53px; width: 65px; height: 51px; float: left;}
+		.login-box .input-box input {width: 250px; height: 51px; border: 1px solid #7DB2CE; padding: 10px; border-radius: 0 4px 4px 0; font-size: 16px; float: left;}
+		.login-box .input-box input.loginpassword {border-top: 1px solid #7DB2CE; border-right: 0px; border-bottom: 1px solid #7DB2CE; border-left: 1px solid #7DB2CE; padding-right: 35px;}
+		.login-box .input-box #pw {width: 35px; height: 51px; float: left; border-right: 1px solid #7DB2CE; border-radius: 0 4px 4px 0; border-top: 1px solid #7DB2CE; border-bottom: 1px solid #7DB2CE; margin-left: -35px;}
+		.login-box .input-box #pw #hiddenPW {background-position: -860px -54px; width: 23px; height: 16px; float: left; margin-top: 17px; margin-left: 5px;}
+		.login-box .input-box #pw #visiblePW {background-position: -893px -56px; width: 19px; height: 13px; float: left; margin-top: 19px; margin-left: 5px;}
+	.login-box .extra {margin-left: 42px;}
+		.login-box .extra input[type=checkbox] {display:none;}
+		.login-box .extra input[type=checkbox].tertiaryChkbx + label span {display: inline-block; background-position: -1265px -303px; width: 21px; height: 21px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
+		.login-box .extra input[type=checkbox].tertiaryChkbx:checked + label span {background-position: -1265px -327px;}
+		.login-box .extra label {cursor: pointer; color: #757575;}
+	.login-box button.slate {border: 1px solid #0B1F2E; border-radius: 4px; background-color: #405C72; color: #FFFFFF; text-transform: uppercase; font-size: 28px; margin: 30px 42px 30px 42px;}
+		.login-box button.slate:hover {opacity: 0.8;}
+		.login-box button.slate:active {background-color: #51728C;}
+
+	/************     LOGIN FAILED     *************/
+	.login-box.failed {padding: 30px 20px; text-align: center}
+		.login-box.failed .lock {background-position: -890px -74px; width: 23px; height: 29px; display: inline-block; margin: 10px;}
+		.login-box.failed h1 {color: #004A80; font-size: 30px; font-family: 'Muli', sans-serif !important;}
+		.login-box.failed p {color: #757575; line-height: 1.8; margin-bottom: 35px; font-size: 14px;}
+		.login-box.failed a, .login-box.failed a:hover, .login-box.failed a:focus {color: #004A80;}
+
+	/************     LOGIN FOOTER     *************/
+	.login-footer {background-color: #3B4354; color: #FFFFFF; float: left; width: 100%; padding: 10px; /************/margin-top: 30px;}
+		.login-footer ul {padding-left: 0px;}
+		.login-footer ul li {display: inline-block;}
+		.login-footer .info {float: left; width: 500px;}
+			.login-footer .info ul {padding-left: 0px;}
+			.login-footer .info ul li {padding-right: 10px; padding-left: 7px; border-right: 1px solid #FFFFFF;}
+			.login-footer .info ul li:first-of-type {padding-left: 0px;}
+			.login-footer .info ul li:last-of-type {border-right: none;}
+			.login-footer .info ul a, .login-footer .info ul a:active, .login-footer .info ul a:focus {color: #FFFFFF;}
+			.login-footer .info p {line-height: 1.2; font-size: 14px; margin-bottom: 0px; padding-top: 10px;}
+		.login-footer .social {float: right;}
+			.login-footer .social ul li {width: 32px; height: 32px; margin-right: 5px;}
+			.login-footer .social ul li:last-of-type {margin-right: 0px;}
+			.login-footer .social ul li a {display: block; width: 100%; height: 100%;}
+			.login-footer .social ul li a span {position: absolute; left: -9999px;}
+			.facebook {background-position: -923px -55px; }
+			.linkedin {background-position: -963px -55px; }
+			.twitter {background-position: -1003px -55px; }
+			.youtube {background-position: -1044px -55px; }
+
+/***************	  NAV & MENUS    	*************/
+	/***************	  SIDEBAR     	*************/
+	.sidebar {background-color: #3B4354; border-right: 1px solid #2F3C48; float: left; padding: 10px 0px; width: 240px; min-height: 600px; /************/margin-right: 30px;}
+		.sidebar li {list-style: none;}
+		.sidebar li div {padding: 12px 15px;}
+		.sidebar li div:nth-of-type(2), .sidebar li div:nth-of-type(3) {padding: 0px;}
+		.sidebar li a, .sidebar li a:hover, .sidebar li a:focus {color: #FFFFFF;}
+		.sidebar span {display: inline-block;}
+
+		.hamburger-sideMenu {background-position: -803px -112px; width: 28px; height: 24px; float: right; margin-right: 15px; margin-bottom: 40px;}
+		.home-sideMenu {background-position: -837px -111px; width: 27px; height: 28px; margin-right: 11px !important;}
+		.lists-sideMenu {background-position: -871px -112px; width: 23px; height: 21px;}
+		.settings-sideMenu {background-position: -901px -112px; width: 23px; height: 24px;}
+		.myProfile-sideMenu {background-position: -719px -195px; width: 18px; height: 22px;}
+		.helpSupport-sideMenu {background-position: -744px -196px; width: 22px; height: 22px;}
+		.userPermissions-sideMenu {background-position: -772px -196px; width: 27px; height: 24px;}
+		.userGroups-sideMenu {background-position: -806px -197px; width: 24px; height: 17px;}
+		.sysNotif-sideMenu {background-position: -1085px -58px; width: 24px; height: 20px;}
+		.logout-sideMenu {background-position: -838px -194px; width: 17px; height: 27px;}
+		.chevron-right-secondary {background-position: -763px -128px; width: 8px; height: 14px; margin-right: 0px !important; float: right !important; margin-top: 5px;}
+		.chevron-down-secondary {background-position: -778px -128px; width: 14px; height: 8px; margin-right: 0px !important; float: right !important; margin-top: 9px;}
+		.chevron-seeMore-secondary {background-position: -783px -112px; width: 15px; height: 9px; margin-right: 0px !important; float: right !important; margin-top: 3px;}
+
+		.sidebar ul.side-menu {padding-left: 0px;}
+		.sidebar ul.side-menu > li {border-bottom: 1px solid #2F3C48; font-size: 18px; font-weight: 500; cursor: pointer;}
+		.sidebar ul.side-menu > li:first-of-type {border-top: 1px solid #2F3C48;}
+		.sidebar ul.side-menu > li >div:first-of-type:hover {background-color: #485266;}
+		.sidebar ul.side-menu > li.active > div:first-of-type {background-color: #485266; border-bottom: 1px solid #2F3C48;}
+		.sidebar ul.side-menu > li a:hover {text-decoration: none;}
+		.sidebar ul.side-menu > li a span {margin-right: 15px; float: left;}
+		.sidebar ul.side-menu > li ul.child-menu {padding: 0px;}
+		.sidebar ul.side-menu > li:last-of-type ul.child-menu li:last-of-type {border-bottom: none !important; padding: 12px 10px 17px 55px;}
+		.sidebar ul.side-menu > li ul.child-menu li {border-bottom: 1px solid #CCCCCC; padding: 10px 10px 10px 55px; line-height: 1.2; font-size: 16px;}
+		.sidebar ul.side-menu > li ul.child-menu li:hover {background-color: #485266;}
+		.sidebar ul.side-menu > li ul.child-menu li.ta-r {font-size: 14px;}
+		.sidebar ul.side-menu > li ul.child-menu li.ta-r span span {font-style: italic; font-size: 12px; color: #FFFFFF;}
+
+	/***************	  USER MENU     	*************/
+	.user {float: right; color: #757575; font-size: 18px;}
+		.profilePic-default-sm {background-position: -715px -112px; width: 41px; height: 41px; float: left; margin-right: 8px;}
+		.userID {float: left; margin-top: 5px;}
+		.chevron-down-primary {background-position: -761px -112px; width: 14px; height: 8px; float: left; margin: 15px 0px 0px 8px;}
+	#userMenuExample .menu-drop {width: 270px; min-height: 250px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; float: right; margin-top: 12px;}
+		#userMenuExample .menu-drop ul {padding: 0px; margin: 0px;}
+		#userMenuExample .menu-drop ul li {list-style: none; border-bottom: 1px solid #DADADA; font-size: 14px; font-weight: 500; cursor: pointer; padding: 12px 15px;}
+		#userMenuExample .menu-drop ul li:hover {background-color: #F1F1F1;}
+		#userMenuExample .menu-drop ul li:last-of-type {border-bottom: none;}
+		#userMenuExample .menu-drop ul li a, .menu-drop ul li a:hover, .menu-drop ul li a:focus {color: #3B4354; text-decoration: none;}
+		#userMenuExample .menu-drop ul li a > span:first-of-type {margin: 0px 11px 0px 0px; width: 30px; max-height: 40px; float: left;}
+		#userMenuExample .menu-drop ul li a span:first-of-type span {float: left;}
+		.myProfile-userMenu {background-position: -719px -164px; width: 18px; height: 22px;}
+		.helpSupport-userMenu {background-position: -744px -164px; width: 22px; height: 22px;}
+		.userPermissions-userMenu {background-position: -772px -164px; width: 27px; height: 24px;}
+		.userGroups-userMenu {background-position: -806px -166px; width: 24px; height: 17px;}
+		.sysNotif-userMenu {background-position: -1119px -58px; width: 24px; height: 20px;}
+		.logout-userMenu {background-position: -838px -163px; width: 17px; height: 27px;}
+
+	/***************	  ITEM MENU     	*************/
+	#itemMenuExample {width: 300px; float: left;}
+		#itemMenuExample .menu-drop {width: 270px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; float: left; margin-top: 5px;}
+		#itemMenuExample .menu-drop ul {padding: 0px; margin: 0px;}
+		#itemMenuExample .menu-drop ul li {list-style: none; border-bottom: 1px solid #DADADA; font-size: 14px; font-weight: 500; cursor: pointer; padding: 12px 15px;}
+		#itemMenuExample .menu-drop ul li:hover {background-color: #F1F1F1;}
+		#itemMenuExample .menu-drop ul li:last-of-type {border-bottom: none;}
+		#itemMenuExample .menu-drop ul li a, .menu-drop ul li a:hover, .menu-drop ul li a:focus {color: #3B4354; text-decoration: none;}
+		#itemMenuExample .menu-drop ul li a > span:first-of-type {margin: 0px 11px 0px 0px; width: 30px; max-height: 40px; float: left;}
+		#itemMenuExample .menu-drop ul li a span:first-of-type span {float: left;}
+		.chevron-down-dkprimary {background-position: -778px -142px; width: 14px; height: 8px; float: left;}
+		.edit-listItemMenu {background-position: -871px -142px; width: 23px; height: 21px;}
+		.setExp-listItemMenu {background-position: -901px -142px; width: 23px; height: 25px;}
+		.delete-listItemMenu {background-position: -963px -141px; width: 22px; height: 23px;}
+
+	/***************	  FILTER MENU     	*************/
+	#filterMenuExample {width: 300px; float: left;}
+		#filterMenuExample .sectionHeader {height: 55px;}
+		#filterMenuExample .sectionHeader .chevron-down-secondary {background-position: -778px -128px; width: 14px; height: 8px; margin-right: 14px !important; float: right !important; margin-top: 25px;}
+		#filterMenuExample .menu-drop {width: 170px; float: right; border: 1px solid #CCCCCC; background-color: #FFFFFF;}
+		#filterMenuExample .menu-drop ul {padding-left: 0px;margin-bottom: 0px;}
+		#filterMenuExample .menu-drop ul li {list-style: none; font-size: 14px; font-weight: 500; cursor: pointer; padding: 6px 15px;}
+		#filterMenuExample .menu-drop ul li:hover {background-color: #F1F1F1;}
+		#filterMenuExample .menu-drop ul li:last-of-type {border-top: 1px solid #DADADA; padding: 12px 15px;}
+		#filterMenuExample .menu-drop ul li a, .menu-drop ul li a:hover, .menu-drop ul li a:focus {color: #3B4354; text-decoration: none;}
+
+/***************	  ADDITIONAL ICONS    	*************/
+.example {float: left; padding: 10px; width: 50%;}
+.example h4 {text-decoration: underline;}
+	/***************	  EXAMPLE 1	*************/
+	span.count {float: right;color: #FFFFFF; font-size: 11px; margin-top: 11px;}
+	span.count.onedigit {margin-right: 14px;}
+	span.count.twodigits {margin-right: 10px;}
+	span.count.threedigits {margin-right: 7px;}
+	.item-edit-pencil-primary {background-position: -716px -257px; width: 27px; height: 26px; float: left; margin-right: 10px;}
+	.item-delete-primary {background-position: -747px -256px; width: 27px; height: 27px; float: left;}
+	.item-edit-pencil-secondary {background-position: -716px -289px; width: 27px; height: 26px; float: left; margin-right: 10px;}
+	.item-delete-secondary {background-position: -747px -288px; width: 27px; height: 27px; float: left;}
+	.system-notif-active {background-position: -464px -271px; width: 57px; height: 46px; float: left; margin-right: 10px;}
+	.my-notif-active {background-position: -528px -271px; width: 50px; height: 49px; float: left; /************/margin-right: 20px;}
+	.system-notif-inactive {background-position: -464px -228px; width: 39px; height: 33px; float: left; margin-right: 10px;}
+	.my-notif-inactive {background-position: -528px -230px; width: 29px; height: 34px; float: left;}
+	.lists-btn {background-position: -871px -112px; width: 23px; height: 21px; float: left; margin-right: 12px;}
+	button.primaryBtn {height: 45px; color: #FFFFFF; text-transform: uppercase; border: none; padding: 0px 12px; /************/float: left;}
+	button.primaryBtn.action {background-color: #51BF87;}
+	.manual-sort-up-active {background-position: -1025px -110px; width: 16px; height: 14px; float: left; margin-bottom: 3px; /************/margin-right: 10px;}
+	.manual-sort-up-inactive {background-position: -1043px -110px; width: 16px; height: 14px; float: left; margin-bottom: 3px;}
+	.manual-sort-down-active {background-position: -1025px -127px; width: 16px; height: 14px; float: left; /************/margin-right: 10px;}
+	.manual-sort-down-inactive {background-position: -1043px -127px; width: 16px; height: 14px; float: left;}
+	
+	/***************	  EXAMPLE 2	*************/
+	.popupHeader {height: 55px; padding: 10px; width: 420px;}
+	.close-modal {background-position: -933px -112px; width: 20px; height: 20px; float: right; margin-top: 7px;}
+	.item-save-primary-modal {background-position: -781px -257px; width: 26px; height: 26px;float: left; margin-right: 10px;}
+	.item-delete-primary-modal {background-position: -747px -256px; width: 27px; height: 27px;float: left; margin-right: 10px;}
+	.item-notif-primary-modal {background-position: -859px -256px; width: 26px; height: 30px;float: left; margin-right: 10px;}
+	.item-loc-delete-modal {background-position: -1065px -111px; width: 18px; height: 19px; float: left;}
+	.samp.pubOpt input[type=radio] {display:none;}
+		.samp.pubOpt input[type=radio].blueRadio + label span {display: inline-block; background-position: -1265px -204px; width: 22px; height: 22px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
+		.samp.pubOpt input[type=radio].blueRadio:checked + label span {background-position: -1265px -228px;}
+		.samp.pubOpt label {cursor: pointer; color: #757575; margin-right: 10px;}
+	.datepicker-cal-modal {background-position: -934px -175px; width: 23px; height: 25px; float: left; /************/margin-right: 10px;}
+	.increase-up {background-position: -962px -176px; width: 14px; height: 8px; float: left; /************/margin-right: 5px;}
+	.decrease-down {background-position: -962px -189px; width: 14px; height: 8px; float: left;}
+	.upload {background-position: -1027px -147px; width: 52px; height: 37px; float: left; /************/margin-right: 10px;}
+	.add-notif {background-position: -1088px -140px; width: 20px; height: 19px; float: left; /************/margin-right: 5px;}
+	.delete-notif {background-position: -1088px -165px; width: 19px; height: 19px; float: left; /************/margin-right: 10px;}
+	.chevron-goback-modal {background-position: -1088px -112px; width: 17px; height: 9px; float: left; /************/margin-right: 10px;}
+	.question-info {background-position: -821px -227px; width: 21px; height: 21px; float: left;}
+	.samp.notif input[type=checkbox] {display:none;}
+		.samp.notif input[type=checkbox].primaryChkbx + label span {display: inline-block; background-position: -1265px -253px; width: 22px; height: 22px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
+		.samp.notif input[type=checkbox].primaryChkbx:checked + label span {background-position: -1265px -278px;}
+		.samp.notif label {cursor: pointer; color: #757575; margin-right: 10px;}
+
+	/***************	  EXAMPLE 3	*************/
+	#calendarExample {width: 285px;}
+		#calendarExample .sectionHeader {height: 55px;}
+		#calendarExample .sectionHeader #prev {width: 50px; height: 100%; border-right: 1px solid #38729C; float: left;}
+		#calendarExample .sectionHeader #title {float: left; padding: 7px 15px; width: 185px;}
+		#calendarExample .sectionHeader #title h2 {font-family: 'Muli', sans-serif; font-size: 14px; color: #FFFFFF; margin: 0px; text-align: center;}
+		#calendarExample .sectionHeader #title h1 {font-family: 'Muli', sans-serif; font-size: 18px; color: #FFFFFF; margin: 0px; text-align: center; margin-top: 6px;}
+		.cal-prev {background-position: -906px -176px; width: 8px; height: 14px; float: left; margin: 20px 0px 0px 20px;}
+		.cal-next {background-position: -920px -176px; width: 8px; height: 14px; float: left; margin: 20px 0px 0px 20px;}
+		#calendarExample .sectionHeader #next {width: 50px; height: 100%; border-left: 1px solid #38729C; float: left;}
+	.cal-currDay {background-position: -865px -176px; width: 33px; height: 33px; float: left;}
+		.cal-currDay span.day {float: left; color: #FFFFFF; margin-top: 8px; font-size: 12px;}
+		.cal-currDay span.day.onedigit {margin-left: 14px; }
+		.cal-currDay span.day.twodigits {margin-left: 9px; }
+	.cal-expiring {background-position: -906px -201px; width: 5px; height: 5px; float: left;}
+	.sort-ascending {background-position: -809px -141px; width: 9px; height: 9px; float: left; /************/margin-bottom: 5px;}
+	.sort-descending {background-position: -796px -141px; width: 9px; height: 9px; float: left;}
+	.samp.cal input[type=checkbox] {display:none;}
+		.samp.cal input[type=checkbox].secondaryChkbx + label span {display: inline-block; background-position: -1267px -160px; width: 19px; height: 19px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
+		.samp.cal input[type=checkbox].secondaryChkbx:checked + label span {background-position: -1267px -182px;}
+		.samp.cal label {cursor: pointer; color: #004A80; margin-right: 10px;}
+	.selectPrimary {padding: 0; margin: 0; border: 1px solid #ABABAB; width: 200px; overflow: hidden; background-color: #fff; background: url('../img/dropdown-primary.png') no-repeat 95% 50%; }
+	.selectPrimary select {padding: 5px 8px; width: 130%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+	.selectPrimary select:focus {outline: none;}
+
+	/***************	  EXAMPLE 4	*************/
+	.profilePic-default-lg {background-position: -592px -229px; width: 82px; height: 82px; float: left; /************/margin-right: 20px;}
+	.selectSecondary {padding: 0; margin: 0; border: 1px solid #7DB2CE; width: 270px; overflow: hidden; background-color: #fff; background: url('../img/dropdown-secondary.png') no-repeat 95% 50%; }
+	.selectSecondary select {padding: 5px 8px; width: 130%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+	.selectSecondary select:focus {outline: none;}
+	.user-mng-user-grps {background-position: -815px -256px; width: 38px; height: 34px; float: left;}
+
+	/***************	  EXAMPLE 5	*************/
+	.attachment {background-position: -861px -80px; width: 20px; height: 18px; float: left;}
+	.input-search {width: 251px; height: 26px; /************/float: left;}
+		.input-search input {width: 220px; height: 26px; border-top: 1px solid #7DB2CE; border-right: none; border-bottom: 1px solid #7DB2CE; border-left: 1px solid #7DB2CE; padding: 2px 7px; font-size: 14px; float: left;}
+		.input-search input[placeholder] {color: #AAAAAA;}
+		.input-search input::-webkit-input-placeholder {color: #AAAAAA;}
+		.input-search input:-moz-placeholder {color: #AAAAAA;}
+		.input-search input::-moz-placeholder {color: #AAAAAA;}
+		.input-search input:-ms-input-placeholder {color: #AAAAAA;}
+		.search-modal {background-position: -715px -223px; width: 31px; height: 26px; float: left; border: none; margin-left: -1px;}
+	.add-user {background-position: -989px -113px; width: 30px; height: 21px; float: left; margin-bottom: 30px;}
+	.remove-user {background-position: -989px -140px; width: 30px; height: 21px; float: left;}
+	button.primaryBtn.plain {background-color: #C5C3C3;}
+		.clear-btn {background-position: -959px -111px; width: 23px; height: 23px; float: left; margin-right: 12px;}
+
+	/***************	  EXAMPLE 6	*************/
+	.trashbin {background-position: -951px -210px; width: 24px; height: 24px; float: left; /************/margin-right: 30px;}
+	.cal-light {background-position: -983px -175px; width: 23px; height: 25px; float: left; margin-right: 12px;}
+	.newNotif {background-position: -804px -231px; width: 8px; height: 8px; float: left;}
+
+	/***************	  EXAMPLE 7	*************/
+	.ico-success {background-position: -853px -228px; width: 27px; height: 20px; float: left; /************/margin-right: 20px;}
+	.ico-error {background-position: -890px -230px; width: 20px; height: 20px; float: left;}
