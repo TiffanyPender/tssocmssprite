@@ -48,12 +48,12 @@ src: url('../vendors/fonts/AvenirLTStd-Light.woff') format('woff');
 
 /***************	  LOGIN SCREEN	*************/
 .login-header {background-position: 0px 0px; background-repeat: repeat-x; height: 47px; /************/margin-bottom: 30px;}
-.login-box {width: 400px; height: 330px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; font-family: 'Muli', sans-serif !important; /************/float: left; margin-right: 40px;}
+.login-box {width: 430px; height: 365px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; font-family: 'Muli', sans-serif !important; /************/float: left; margin-right: 40px;}
 	.login-box label {font-weight: normal;}
-	.login-box .input-box, .login-box button[name=loginBtn] {width: 315px; height: 51px; margin: 30px auto;}
+	.login-box .input-box, .login-box button[name=loginBtn] {width: 345px; height: 51px; margin: 30px auto;}
 		.login-box .input-box #login-id {background-position: -716px -53px; width: 65px; height: 51px; float: left;}
 		.login-box .input-box #login-pw {background-position: -787px -53px; width: 65px; height: 51px; float: left;}
-		.login-box .input-box input {width: 250px; height: 51px; border: 1px solid #7DB2CE; padding: 10px; border-radius: 0 4px 4px 0; font-size: 16px; float: left;}
+		.login-box .input-box input {width: 280px; height: 51px; border: 1px solid #7DB2CE; padding: 10px; border-radius: 0 4px 4px 0; font-size: 16px; float: left;}
 		.login-box .input-box input.loginpassword {border-top: 1px solid #7DB2CE; border-right: 0px; border-bottom: 1px solid #7DB2CE; border-left: 1px solid #7DB2CE; padding-right: 35px;}
 		.login-box .input-box #pw {width: 35px; height: 51px; float: left; border-right: 1px solid #7DB2CE; border-radius: 0 4px 4px 0; border-top: 1px solid #7DB2CE; border-bottom: 1px solid #7DB2CE; margin-left: -35px;}
 		.login-box .input-box #pw #hiddenPW {background-position: -860px -54px; width: 23px; height: 16px; float: left; margin-top: 17px; margin-left: 5px;}
