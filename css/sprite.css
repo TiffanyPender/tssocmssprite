@@ -57,7 +57,7 @@ src: url('../vendors/fonts/AvenirLTStd-Light.woff') format('woff');
 		.login-box .input-box input.loginpassword {border-top: 1px solid #7DB2CE; border-right: 0px; border-bottom: 1px solid #7DB2CE; border-left: 1px solid #7DB2CE; padding-right: 35px;}
 		.login-box .input-box #pw {width: 35px; height: 51px; float: left; border-right: 1px solid #7DB2CE; border-radius: 0 4px 4px 0; border-top: 1px solid #7DB2CE; border-bottom: 1px solid #7DB2CE; margin-left: -35px;}
 		.login-box .input-box #pw #hiddenPW {background-position: -860px -54px; width: 23px; height: 16px; float: left; margin-top: 17px; margin-left: 5px;}
-		.login-box .input-box #pw #visiblePW {background-position: -893px -56px; width: 19px; height: 13px; float: left; margin-top: 19px; margin-left: 5px;}
+		.login-box .input-box #pw #visiblePW {background-position: -893px -56px; width: 19px; height: 13px; float: left; margin-top: 19px; margin-left: 6px;}
 	.login-box .extra {margin-left: 42px;}
 		.login-box .extra input[type=checkbox] {display:none;}
 		.login-box .extra input[type=checkbox].tertiaryChkbx + label span {display: inline-block; background-position: -1265px -303px; width: 21px; height: 21px; margin-right: 5px; vertical-align:middle; cursor: pointer;}
