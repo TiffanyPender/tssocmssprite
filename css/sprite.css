@@ -25,13 +25,24 @@ src: url('../vendors/fonts/AvenirLTStd-Light.woff') format('woff');
 .samp {padding: 10px; float: left;}
 
 /****primary  is gray & secondary is white****/
+.color-box {padding: 20px; border: 1px solid #999; margin: 8px;}
+.color-box h3 {margin-bottom: 20px; color: #FFFFFF;}
 .white {background-color: #FFFFFF;}
 .blue {background-color: #7DB2CE;}
 .darkBlue {background-color: #004A80;}
 .green {background-color: #51BF87;}
-
+.dkblue-loginBtn {background-color: #405C72;}
+.dkblue-FooterSidebar {background-color: #3B4354;}
+.blue-sectionHeader {background-color: #7DB2CE;}
+.dkblue-sectionHeader {background-color: #004A80;}
+.red-expired {background-color: #FE140E;}
+.red-expiring {background-color: #F0BAB9;}
+.green-sectionHeader {background-color: #51BF87;}
+.orange-tab {background-color: #FF6900;}
+.gray-menuHover {background-color: #F1F1F1;}
+.gray-menuHover h3 {color: #999999;}
 .header-content-inner span {font-size: 12px;}
-.spriteOutput, .spriteCode {width: 90%; margin: 0 auto; text-align: left; padding-top: 20px; color: #999; font-family: 'Muli', sans-serif !important; /***font-family: 'Lato', sans-serif !important;****/}
+.spriteOutput, .spriteCode {width: 90%; margin: 0 auto; text-align: left; padding-top: 20px; color: #999; font-family: 'Open Sans', sans-serif !important; /*font-family: 'Muli', sans-serif !important;*/ /***font-family: 'Lato', sans-serif !important;****/}
 .spriteCode {max-height: 500px; overflow-y: auto;}
 
 
@@ -48,7 +59,7 @@ src: url('../vendors/fonts/AvenirLTStd-Light.woff') format('woff');
 
 /***************	  LOGIN SCREEN	*************/
 .login-header {background-position: 0px 0px; background-repeat: repeat-x; height: 47px; /************/margin-bottom: 30px;}
-.login-box {width: 430px; height: 365px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; font-family: 'Muli', sans-serif !important; /************/float: left; margin-right: 40px;}
+.login-box {width: 430px; height: 365px; border: 1px solid #CCCCCC; background-color: #FFFFFF; font-weight: normal; font-family: 'Open Sans', sans-serif !important; /************/float: left; margin-right: 40px;}
 	.login-box label {font-weight: normal;}
 	.login-box .input-box, .login-box button[name=loginBtn] {width: 345px; height: 51px; margin: 30px auto;}
 		.login-box .input-box #login-id {background-position: -716px -53px; width: 65px; height: 51px; float: left;}
@@ -70,7 +81,7 @@ src: url('../vendors/fonts/AvenirLTStd-Light.woff') format('woff');
 	/************     LOGIN FAILED     *************/
 	.login-box.failed {padding: 30px 20px; text-align: center}
 		.login-box.failed .lock {background-position: -890px -74px; width: 23px; height: 29px; display: inline-block; margin: 10px;}
-		.login-box.failed h1 {color: #004A80; font-size: 30px; font-family: 'Muli', sans-serif !important;}
+		.login-box.failed h1 {color: #004A80; font-size: 30px; font-family: 'Open Sans', sans-serif !important;}
 		.login-box.failed p {color: #757575; line-height: 1.8; margin-bottom: 35px; font-size: 14px;}
 		.login-box.failed a, .login-box.failed a:hover, .login-box.failed a:focus {color: #004A80;}
 
